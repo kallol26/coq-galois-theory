@@ -1,4 +1,5 @@
 #summary Timeline for Google SOC project.
+#labels Featured
 
 = Timelines =
 
@@ -33,4 +34,3 @@ least we can list all the milestones here.
 || August 13-19  || Separable field extensions, Galois Groups || Def. 3.6 - Corr. 3.13 ||
 || August 20-26  || Separable field extensions, Galois Groups || Def. 3.6 - Corr. 3.13 ||
 || August 27-31  || The Fundamental Theorem of Galois Theory || Thm. 3.16 ||
-
