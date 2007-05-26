@@ -1,0 +1,19 @@
+#summary One-sentence summary of this page.
+
+
+= Timelines =
+
+== Administrative Timeline ==
+
+  * May 28 : Project begins.
+  * July 9-16 : Midterm evaluations.
+  * August 20-31 : Final evaluations.
+
+== Coding Timeline ==
+
+  * May 28-June 5 : 
+    * Define polynomials
+    * Ring structure
+    * Euclidean algorithm
+
+
