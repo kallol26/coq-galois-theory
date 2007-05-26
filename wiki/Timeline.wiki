@@ -13,11 +13,24 @@
 Theorem numbers are from Milne's notes on 
 [http://www.jmilne.org/math/CourseNotes/math594f.html Fields and Galois Theory]
 
-  * May 28-June 5 : 
-    * Define polynomials
-    * Ring structure
-    * Euclidean algorithm
+These dates are rather arbitrary.  The process of theorem proving is still
+black magic: seeming (but not actual) trivialities such as the associativity of polynomial multiplication
+can easily take longer than major results that rely on them.  Being so, it is useful to have a rough schedule to follow.  This will no doubt change as the summer progresses.  At
+least we can list all the milestones here.
 
-
-
+|| *Week* || *Subject* || *Theorem* ||
+|| May 28 - June 3 ||  Rings || ||
+|| June 4 - June 10 || ||
+|| June 11 - June 17  || Polynomials ||  ||
+|| June 18 - June 24 || ||
+|| June 25 - July 1  || Polynomial factoring, Field extensions || 
+|| July 2 - July 8 || ||
+|| July 9 - July 15  || ||
+|| July 16 - July 22 || || 
+|| July 23 - July 29  || Splitting Fields || Prop. 2.1 - 2.12 ||
+|| July 30 - August 5 || ||
+|| August 6-12  || Groups of Automorphisms || Prop 3.2 - Corr. 3.5 ||
+|| August 13-19  || Separable field extensions, Galois Groups || Def. 3.6 - Corr. 3.13 ||
+|| August 20-26  || Separable field extensions, Galois Groups || Def. 3.6 - Corr. 3.13 ||
+|| August 27-31  || The Fundamental Theorem of Galois Theory || Thm. 3.16 ||
 
