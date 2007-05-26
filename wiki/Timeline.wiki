@@ -10,9 +10,14 @@
 
 == Coding Timeline ==
 
+Theorem numbers are from Milne's notes on 
+[http://www.jmilne.org/math/CourseNotes/math594f.html Fields and Galois Theory]
+
   * May 28-June 5 : 
     * Define polynomials
     * Ring structure
     * Euclidean algorithm
+
+
 
 
