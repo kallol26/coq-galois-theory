@@ -1,23 +1,19 @@
 #summary Theorem Timeline.
-#labels Featured
 
 = Theorems =
 
 The following table gives a list of theorems we need to prove in Coq
-to complete our project.  
-
-Rotman # refers to the book
+to complete our project.   We follow the text
 "Galois Theory" by Joseph Rotman.  (Springer-Verlag, 1991).
-Regular font refers to theorem numbers from that text.
-Italic font refers to exercise numbers that are used in the proofs.
+The theorem and exercise numbers refer to that text.
+The theorems and exercises are numbered with distinct counters,
+thus the somewhat unusual ordering in the followign table.
 
-Done is one of {Yes, No, In Progress}.
-
-Coq is a link to the formal statement of the theorem in the
-Coq source.
-
-Date is the projected date we hope to have the theorem completed by.
-
+The columns are 
+  * Rotman #: The number from the text.
+  * Done: one of {Yes, No, In Progress}.
+  * Coq: a link to the formal statement of the theorem in the project source.
+  * Date: the projected date we hope to have the theorem completed by.
 
 || _*Rotman #*_ || _*Done*_ || _*Coq*_ || _*Date*_ ||
 || *Rings* || || || ||
@@ -127,4 +123,3 @@ Date is the projected date we hope to have the theorem completed by.
 || 62 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
 || *Fundamental Theorem of Galois Theory* || || || ||
 || 63 (Fundamental Theorem of Galois Theory)|| No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-
