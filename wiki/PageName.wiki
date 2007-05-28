@@ -4,13 +4,14 @@
 = Theorems =
 
 || Global || Rotman || Theorem || Done ||
-|| 63 || 63 || http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3/ ||
+|| 63 || 63 || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 63] ||
 No ||
 
 
 Fundamental Theorem  
 
 
-http://www.google.com
+[http://www.google.com google]
+
 
 
