@@ -4,8 +4,7 @@
 = Theorems =
 
 || Global # || Rotman # || Description || Done || Coq ||
-|| 157 || 63 || Fundamental Theorem || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] ||No||
-
+|| 157 || 63 || Fundamental Theorem || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] ||
 
 
 
