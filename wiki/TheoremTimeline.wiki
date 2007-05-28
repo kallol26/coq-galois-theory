@@ -1,4 +1,5 @@
 #summary Theorem Timeline.
+#labels Featured
 
 = Theorems =
 
