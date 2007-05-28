@@ -3,13 +3,10 @@
 
 = Theorems =
 
-|| Global || Rotman || Theorem || Done ||
-|| 63 || 63 || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 63] ||No||
+|| Global # || Rotman # || Description || Done || Coq ||
+|| 157 || 63 || Fundamental Theorem || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] ||No||
 
 
-Fundamental Theorem  
 
-
-[http://www.google.com google]
 
 
