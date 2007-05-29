@@ -17,7 +17,7 @@ The columns are
 
 || _*Rotman #*_ || _*Done*_ || _*Coq*_ || _*Date*_ ||
 || *Rings* || || || ||
-|| Theorem 1 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 6/1 ||
+|| Theorem 1 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#RingThm3#mul0r coq] || 6/1 ||
 || Theorem 2 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
 || Exercise 4 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
 || Exercise 7 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
