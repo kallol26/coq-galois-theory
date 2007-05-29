@@ -1,7 +1,8 @@
 
-FILES = galois
+FILES = ssr nat_lib nati_lib ring
 GLOB_FILE = .glob
 DOC_DIR = ../doc
+WEBSITE_DOC_DIR = ~/save/projects/website/research/projects/galois/doc
 SSR_DIR = ../../trunk
 
 V_FILES = $(addsuffix .v,$(FILES))
@@ -16,7 +17,8 @@ default : $(VO_FILES) $(HTML_FILES)
 	ssrcoq -I $(SSR_DIR) -dump-glob $(GLOB_FILE) -compile $*
 
 %.html : %.v
-	coqdoc -d $(DOC_DIR) --glob-from $(GLOB_FILE) $<
+	coqdoc -d $(DOC_DIR) --glob-from $(GLOB_FILE) -l --toc $<
+	-cp -Rf $(DOC_DIR)/* $(WEBSITE_DOC_DIR)
 
 
 clean :
