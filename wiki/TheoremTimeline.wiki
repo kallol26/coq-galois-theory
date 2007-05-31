@@ -13,7 +13,7 @@ on our choice of definitions in the code itself, which is linked below.
 || Structure || _*Done*_ || _*Coq*_ || 
 || Rings || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#mul0r coq] ||
 
-== Definitions ==
+= Definitions =
 
 = Theorems =
 
