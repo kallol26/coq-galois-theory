@@ -71,7 +71,7 @@ The columns are
 || Fixed Field || 43 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#mul0r coq] ||
 || Galois (Normal) Extension || 47 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#mul0r coq] ||
 || Lattice || 48 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#mul0r coq] ||
-
+|| || || || ||
 
 
 
