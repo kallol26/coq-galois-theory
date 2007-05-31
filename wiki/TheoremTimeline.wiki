@@ -2,7 +2,7 @@
 
 abc 
 
-= Definitions = 
+
 
 The first step in the program is to define all the relevant algebraic
 structures.  This is not an easy task.  Type theory is not as flexible
@@ -14,6 +14,8 @@ on our choice of definitions in the code itself, which is linked below.
 || Rings || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#mul0r coq] ||
 
 = Theorems =
+
+= Definitions = 
 
 The following table gives a list of theorems we need to prove in Coq
 to complete our project.   We follow the text
