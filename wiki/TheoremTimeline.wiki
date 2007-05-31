@@ -1,5 +1,18 @@
 #summary Theorem Timeline.
 
+= Definitions = 
+
+The first step in the program is to define all the relevant algebraic
+structures.  This is not an easy task.  Type theory is not as flexible
+as set theory.  The choice of whether to make a structure a type,
+or a predicate on elements of a type, is not at all obvious.  We will comment
+on our choice of definitions in the code itself, which is linked below.  
+
+|| Structure || _*Done*_ || _*Coq*_ || 
+
+
+
+
 = Theorems =
 
 The following table gives a list of theorems we need to prove in Coq
@@ -10,121 +23,122 @@ The theorems and exercises are numbered with distinct counters,
 thus the somewhat unusual ordering in the followign table.
 
 The columns are 
-  * Rotman #: The number from the text.
+  * Rotman #: The number from the text.  When we feel a theorem is left out (e.g. linear algebra theorems that are assumed), or just stated as obvious (such as "polynomials form a ring") we add a theorem with tag Assumed and number it to the closest Rotman theorem number.
   * Done: one of {Yes, No, In Progress}.
   * Coq: a link to the formal statement of the theorem in the project source.
   * Date: the projected date we hope to have the theorem completed by.
 
-|| _*Rotman #*_ || _*Done*_ || _*Coq*_ || _*Date*_ ||
-|| *Rings* || || || ||
-|| Theorem 1 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#mul0r coq] || 6/1 ||
-|| Theorem 2 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#domain_cancel coq] || 6/1 ||
-|| Exercise 4 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 6/1 ||
-|| Exercise 7 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 10 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 11 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 12 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 13 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| *Homomorphisms and Ideals* || || || ||
-|| Exercise 18 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 19 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 20 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 27 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 29 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 30 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 32 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 33 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| *Quotient Rings* || || || ||
-|| Theorem 3 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 37 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 39 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| *Polynomial Rings over Fields* || || || ||
-|| Theorem 4 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 5 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 41 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 6 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 7 (Euclidean Algorithm) || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Corollary 8 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 46 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 9 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Corollary 10 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 11 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| *Prime Ideals and Maximal Ideals* || || || ||
-|| Exercise 50 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 53 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 12 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 13 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Corollary 14 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 15 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Corollary 16 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 17 (Kronecker) || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| *Finite Fields* || || || ||
-|| Theorem 18 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 59 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 19 (Galois) || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 64 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| *Irreducible Polynomials* || || || ||
-|| Exercise 66 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 67 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 69 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 70 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Lemma 20 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Lemma 21 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Lemma 22 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 23 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 24 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Corollary 25 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Corollary 26 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| *Splitting Fields* || || || ||
-|| Theorem 27 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 73 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 74 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 28 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Corollary 29 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 30 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Lemma 31 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 32 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Corollary 33 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Corollary 34 (E.H. Moore)|| No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| *Solvability by Radicals* || || || ||
-|| Exercise 78 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 79 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 81 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 82 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| *The Galois Group* || || || ||
-|| Lemma 35 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 36 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 37 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 83 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Exercise 84 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Lemma 38 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 39 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 40 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| *Primitive Roots of Unity* || || || ||
-|| Lemma 41 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 42 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 43 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 44 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Corollary 45 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Corollary 46 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Lemma 47 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 48 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Lemma 49 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 50 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 51 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Corollary 52 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| *Insolvability of the Quintic* || || || ||
-|| Theorem 53 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 54 (Abel-Ruffini) || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| *Independence of Characters* || || || ||
-|| Lemma 55 (Dedekind)|| No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Corollary 56 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Lemma 57 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 58 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Corollary 59 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| *Galois Extensions* || || || ||
-|| Theorem 60 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| *Fundamental Theorem of Galois Theory* || || || ||
-|| Lemma 61 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Lemma 62 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
-|| Theorem 63 (Fundamental Theorem of Galois Theory)|| No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| _*Rotman #*_ || _*Brief Description*_|| _*Done*_ || _*Coq*_ || _*Date*_ ||
+|| *Rings* || || || || ||
+|| Theorem 1 || || *Yes* || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#mul0r coq] || 6/1 ||
+|| Assumed 1a || Polynomials form a ring || *No* || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#mul0r coq] || 6/1 ||
+|| Theorem 2 || || *Yes* || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#domain_cancel coq] || 6/1 ||
+|| Exercise 4 || || *Yes* || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 6/1 ||
+|| Exercise 7 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 10 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 11 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 12 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 13 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| *Homomorphisms and Ideals* || || || || ||
+|| Exercise 18 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 19 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 20 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 27 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 29 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 30 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 32 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 33 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| *Quotient Rings* || || || || ||
+|| Theorem 3 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 37 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 39 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| *Polynomial Rings over Fields* || || || || || 
+|| Theorem 4 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 5 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 41 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 6 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 7 || Euclidean Algorithm || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Corollary 8 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 46 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 9 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Corollary 10 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 11 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| *Prime Ideals and Maximal Ideals* || || || || ||
+|| Exercise 50 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 53 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 12 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 13 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Corollary 14 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 15 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Corollary 16 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 17  || Kronecker || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| *Finite Fields* || || || || ||
+|| Theorem 18 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 59 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 19 || Galois || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 64 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| *Irreducible Polynomials* || || || || ||
+|| Exercise 66 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 67 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 69 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 70 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Lemma 20 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Lemma 21 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Lemma 22 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 23 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 24 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Corollary 25 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Corollary 26 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| *Splitting Fields* || || || || ||
+|| Theorem 27 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 73 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 74 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 28 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Corollary 29 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 30 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Lemma 31 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 32 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Corollary 33 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Corollary 34 || (E.H. Moore) || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| *Solvability by Radicals* || || || || ||
+|| Exercise 78 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 79 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 81 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 82 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| *The Galois Group* || || || || ||
+|| Lemma 35 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 36 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 37 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 83 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Exercise 84 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Lemma 38 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 39 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 40 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| *Primitive Roots of Unity* || || || || ||
+|| Lemma 41 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 42 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 43 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 44 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Corollary 45 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Corollary 46 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Lemma 47 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 48 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Lemma 49 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 50 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 51 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Corollary 52 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| *Insolvability of the Quintic* || || || || ||
+|| Theorem 53 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 54 || (Abel-Ruffini) || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| *Independence of Characters* || || || || ||
+|| Lemma 55 || (Dedekind) || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Corollary 56 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Lemma 57 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 58 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Corollary 59 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| *Galois Extensions* || || || || ||
+|| Theorem 60 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| *Fundamental Theorem of Galois Theory* || || || || ||
+|| Lemma 61 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Lemma 62 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+|| Theorem 63 || Fundamental Theorem of Galois Theory || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
