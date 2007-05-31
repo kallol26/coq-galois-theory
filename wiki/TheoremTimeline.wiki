@@ -15,7 +15,7 @@ on our choice of definitions in the code itself, which is linked below.
 
 = Theorems =
 
-= Definitions = 
+== Definitions ==
 
 The following table gives a list of theorems we need to prove in Coq
 to complete our project.   We follow the text
