@@ -72,13 +72,12 @@ The columns are
 || Galois (Normal) Extension || 47 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#mul0r coq] ||
 || Lattice || 48 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#mul0r coq] ||
 
-<p>
 
+We may not need all these definitions for the main goal.  For example, I don't know if we'll have
+time for finite fields.  
 
 
 = Theorems =
-
-
 
 The following table gives a list of theorems we need to prove in Coq
 to complete our project.   We follow the text
@@ -207,3 +206,6 @@ The columns are
 || Lemma 61 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
 || Lemma 62 || || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
 || Theorem 63 || Fundamental Theorem of Galois Theory || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
+
+We may not this entire list to prove Theorem 63.  We'll learn which we really need by working
+backwards.
