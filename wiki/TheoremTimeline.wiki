@@ -1,5 +1,6 @@
 #summary Theorem Timeline.
 
+
 = Definitions = 
 
 The first step in the program is to define all the relevant algebraic
@@ -9,9 +10,7 @@ or a predicate on elements of a type, is not at all obvious.  We will comment
 on our choice of definitions in the code itself, which is linked below.  
 
 || Structure || _*Done*_ || _*Coq*_ || 
-
-
-
+|| Rings || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#mul0r coq] ||
 
 = Theorems =
 
