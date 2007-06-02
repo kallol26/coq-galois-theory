@@ -16,7 +16,7 @@ The columns are
 
 
 || _* Definition *_ || _* Rotman # *_ || _*Done*_ || _*Coq*_ || 
-|| Rings || 1 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#mul0r coq] ||
+|| Rings || 1 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#Ring coq] ||
 || Polynomials || 2 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#mul0r coq] ||
 || Leading Coefficient || 3 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#mul0r coq] ||
 || Monic Polynomial || 3 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#mul0r coq] ||
@@ -26,9 +26,9 @@ The columns are
 || Cubic Polynomial || 3 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#mul0r coq] ||
 || Quartic Polynomial || 3 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#mul0r coq] ||
 || Quintic Polynomial || 3 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#mul0r coq] ||
-|| (Integral) Domain || 4 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#mul0r coq] ||
+|| (Integral) Domain || 4 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#Domain coq] ||
 || Unit in a Ring || 5 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#mul0r coq] ||
-|| Field || 6 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#mul0r coq] ||
+|| Field || 6 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#field coq] ||
 || Subring || 6 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#mul0r coq] ||
 || Subfield || 6 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#mul0r coq] ||
 || Field of Fractions || 6 || No || [http://www.cs.cmu.edu/~seanmcl/research/projects/galois/doc/ring.html#mul0r coq] ||
