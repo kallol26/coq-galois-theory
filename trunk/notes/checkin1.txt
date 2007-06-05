@@ -1,0 +1,44 @@
+
+Hi Tom,
+
+  I've made fairly good progress this week.  Here are the highlights.
+
+1) I set up a wiki page with all the necessary definitions and theorems
+needed for the project.  Each will be linked to a coqdoc definition at
+my website.  The ones marked "Yes" for being done all link to the right
+file, but the coqdoc html sectioning doesn't seem to be working properly.
+It doesn't always find the right location in the file.  At any rate,
+it is a good way to monitor progress.  
+
+2) I've done a bunch of work, ~1000 lines, on basic rings.  This is
+in the file [ring.v].  It includes the definition of rings, domains,
+fields, homomorphisms and isomorphisms, along with a number of lemmas
+about each.  
+
+3) I've set up some a small library of helpful routines, one for
+classical logic and one for constructive logic.  Since equality
+on subrings depends on classical logic though, we have a strongly
+classical theory.  In fact, I didn't hesitate to include a Hilbert
+choice principle and proof irrelevance.  
+
+As you'll see from the time-line, I didn't get most of the definitions
+complete.  This is because I wanted to get a good start on the most
+basic definitions.  
+
+Plan for this week:
+
+1) Polynomials, definition and ring structure
+
+2) More of the definitions and Rotman theorem statements.
+
+3) More detailed dates on the time-line.
+
+Let me know your thoughts.
+
+Best,
+
+Sean
+
+
+
+
