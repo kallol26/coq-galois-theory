@@ -1,0 +1,4 @@
+
+# svn propset svn:externals -F .svn_externals .
+
+wiki https://coq-galois-theory.googlecode.com/svn/wiki
