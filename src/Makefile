@@ -1,25 +1,27 @@
 
-FILES = ssr nat_lib nati_lib ring
-GLOB_FILE = .glob
-DOC_DIR = ../doc
-WEBSITE_DOC_DIR = ~/save/projects/website/research/projects/galois/doc
+# where to put documentation
+DOC_DIR = ~/save/projects/website/software/galois/doc
+
+# where the ssreflect library lives
 SSR_DIR = ../../trunk
 
+#-------------------------------------------------------------------------------
+# Do not edit below this line                                                   
+#-------------------------------------------------------------------------------
+
+FILES = ssr constructive_lib classical_lib lib ring
+GLOB_FILE = .glob
 V_FILES = $(addsuffix .v,$(FILES))
 VO_FILES = $(addsuffix .vo,$(FILES))
 HTML_FILES = $(addsuffix .html,$(FILES))
 
-default : $(VO_FILES) $(HTML_FILES)
+default : $(VO_FILES) 
 
-
+doc : $(V_FILES)
+	coqdoc -d $(DOC_DIR) --glob-from $(GLOB_FILE) -l --toc $(V_FILES)
 
 %.vo : %.v
 	ssrcoq -I $(SSR_DIR) -dump-glob $(GLOB_FILE) -compile $*
 
-%.html : %.v
-	coqdoc -d $(DOC_DIR) --glob-from $(GLOB_FILE) -l --toc $<
-	-cp -Rf $(DOC_DIR)/* $(WEBSITE_DOC_DIR)
-
-
 clean :
-	rm -rf *.vo doc/* $(GLOB_FILE) *~
+	rm -rf *.vo $(DOC_DIR)/* $(GLOB_FILE) *~
