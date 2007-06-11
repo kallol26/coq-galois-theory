@@ -31,12 +31,14 @@ Fixpoint eqpolynz (p1 p2 : polynz) {struct p1} : bool :=
 Lemma eqpolynzPx : reflect_eq eqpolynz.
 Proof.
  (* {{{ *)
+
 move; elim=> [c1|c1 s1 Hrec]  [c2|c2 s2]; first [by constructor | simpl ]. 
   case: (c1 =P c2) => [<-|Hc]; first by left.
   by right; move=> [H']; case: Hc.
 case: (c1 =P c2) => [<-|Hc] /= .
   by apply: (iffP (Hrec _)) => [<-|[E]].
 by right; move=> [H1 H2].
+
  (* }}} *)
 Qed.
 
@@ -560,4 +562,3 @@ End Poly.
 
 Notation "h :: t" := (Pcons h t) (at level 70) : poly_scope.
 Delimit Scope poly_scope with P.
-
