@@ -114,6 +114,15 @@ Fixpoint deg_nz (p : polynz R) {struct p} : nat :=
 
 Definition deg (p : poly) := if p is Nz p' then Nat (deg_nz p') else -oo.
 
+Definition constant p := deg p = Nat O \/ deg p = -oo.
+Definition linear p := deg p = Nat 1.
+Definition quadratic p := deg p = Nat 2.
+Definition cubic p := deg p = Nat 3.
+Definition quartic p := deg p = Nat 4.
+Definition quintic p := deg p = Nat 5.
+
+Definition irreducible (p : poly) := forall p1 p2, p = p1 * p2 -> deg p1 = Nat O \/ deg p2 = Nat O.
+
 Lemma deg_horner : forall (c : R) (p : poly), deg (const c + X * p) = 
   if p is Nz _ then S' (deg p) else if c is Nz _ then Nat O else Inf.
 Proof. move=> [|c] [|p] //= ; by rewrite cmulnz1.  Qed.
@@ -317,6 +326,7 @@ case: p IH => [|p] IH //=.
   by case c.
 rewrite /= in IH.
 by move: IH => [<-].
+
  (* }}} *)
 Qed.
 
@@ -358,6 +368,7 @@ Qed.
 Lemma degX : deg X = Nat 1%nat.
 Proof. done. Qed.
 
+
 (* -------------------------  leading coefficient  -------------------------- *)
 
 Fixpoint lc_nz (p : polynz R) {struct p} : base' R :=
@@ -367,6 +378,8 @@ Fixpoint lc_nz (p : polynz R) {struct p} : base' R :=
   end.
 
 Definition lc (p : poly) : R := if p is Nz p' then Nz (lc_nz p') else 0.
+
+Definition monic p := lc p = 1.
 
 Lemma lc_nz_nz : forall p, lc p <> 0 -> p <> 0.
 Proof. by move=> [|[c|c p]]. Qed.
