@@ -1,6 +1,6 @@
 
 # where to put documentation
-DOC_DIR = ~/save/projects/website/software/galois/doc
+DOC_DIR = ~/save/versioned/projects/website/software/galois/doc
 
 # where the ssreflect library lives
 SSR_DIR = ../../trunk
@@ -9,7 +9,7 @@ SSR_DIR = ../../trunk
 # Do not edit below this line                                                   
 #-------------------------------------------------------------------------------
 
-FILES = ssr constructive_lib classical_lib lib ring nzring poly
+FILES = ssr constructive_lib classical_lib lib ring nzring poly poly2
 GLOB_FILE = .glob
 V_FILES = $(addsuffix .v,$(FILES))
 VO_FILES = $(addsuffix .vo,$(FILES))
