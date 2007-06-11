@@ -17,60 +17,60 @@ The columns are
 
 || _* Definition *_ || _* Rotman # *_ || _*Done*_ || _*Coq*_ || 
 || Rings || 1 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#Ring coq] ||
-|| Polynomials || 2 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Leading Coefficient || 3 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Monic Polynomial || 3 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Constant Polynomial || 3 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Linear Polynomial || 3 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Quadratic Polynomial || 3 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Cubic Polynomial || 3 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Quartic Polynomial || 3 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Quintic Polynomial || 3 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| (Integral) Domain || 4 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#Domain coq] ||
-|| Unit in a Ring || 5 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
+|| Polynomials || 2 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/poly.html#Poly coq] ||
+|| Leading Coefficient || 3 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/poly2.html#lc coq] ||
+|| Monic Polynomial || 3 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/poly2.html#monic coq] ||
+|| Constant Polynomial || 3 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/poly2.html#constant coq] ||
+|| Linear Polynomial || 3 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/poly2.html#linear coq] ||
+|| Quadratic Polynomial || 3 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/poly2.html#quadratic coq] ||
+|| Cubic Polynomial || 3 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/poly2.html#cubic coq] ||
+|| Quartic Polynomial || 3 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/poly2.html#quartic coq] ||
+|| Quintic Polynomial || 3 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/poly2.html#quintic coq] ||
+|| (Integral) Domain || 4 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/poly2.html#Domain coq] ||
+|| Unit in a Ring || 5 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#unit coq] ||
 || Field || 6 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#field coq] ||
-|| Subring || 6 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Subfield || 6 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Field of Fractions || 6 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Homomorphism || 7 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Isomorphism || 7 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Ideal || 8 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Kernel || 9 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Quotient Ring || 10 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Principle Ideal Domain || 12 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Divides || 12 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Greatest Common Divisor || 12 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Irreducible Polynomial || 15 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Prime Ideal || 17 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Maximal Ideal || 18 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Splits || 19 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Prime Field || 20 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Characteristic of a Field || 20 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Primitive Polynomial || 23 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Content of a Polynomial || 23 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Extension Field || 28 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Degree of an Extension || 28 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Finite Extension || 28 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Simple Extension || 28 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Algebraic || 29 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Transcendental || 29 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Irreducible Polynomial of an Element || 29 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Splitting Field || 30 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Separable Polynomial || 31 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Galois Field || 33 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Pure Extension || 33 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Solvable by Radicals || 34 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Field Automorphism || 35 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Galois Group || 35 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Transitive Group Action || 37 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Solvable Group || 37 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Primitive Element || 39 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Frobenius Automorphism || 40 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Character of a Group || 43 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Automorphism Group || 43 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Fixed Field || 43 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Galois (Normal) Extension || 47 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
-|| Lattice || 48 || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] ||
+|| Subring || 6 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#Sub_ring coq] ||
+|| Subfield || 6 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#Sub_field coq] ||
+|| Field of Fractions || 6 || No || coq ||
+|| Homomorphism || 7 ||*Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#Homo coq] ||
+|| Isomorphism || 7 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#iso coq] ||
+|| Ideal || 8 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#Ideal coq] ||
+|| Kernel || 9 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#kernel coq] ||
+|| Quotient Ring || 10 || No || coq ||
+|| Principle Ideal Domain || 12 || No || coq ||
+|| Divides || 12 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#pdivides coq] ||
+|| Greatest Common Divisor || 12 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#gcd coq] ||
+|| Irreducible Polynomial || 15 || No || coq ||
+|| Prime Ideal || 17 || No || coq ||
+|| Maximal Ideal || 18 || No || coq ||
+|| Splits || 19 || No || coq ||
+|| Prime Field || 20 || No || coq ||
+|| Characteristic of a Field || 20 || No || coq ||
+|| Primitive Polynomial || 23 || No || coq ||
+|| Content of a Polynomial || 23 || No || coq ||
+|| Extension Field || 28 || No || coq ||
+|| Degree of an Extension || 28 || No || coq ||
+|| Finite Extension || 28 || No || coq ||
+|| Simple Extension || 28 || No || coq ||
+|| Algebraic || 29 || No || coq ||
+|| Transcendental || 29 || No || coq ||
+|| Irreducible Polynomial of an Element || 29 || No || coq ||
+|| Splitting Field || 30 || No || coq ||
+|| Separable Polynomial || 31 || No || coq ||
+|| Galois Field || 33 || No || coq ||
+|| Pure Extension || 33 || No || coq ||
+|| Solvable by Radicals || 34 || No || coq ||
+|| Field Automorphism || 35 || No || coq ||
+|| Galois Group || 35 || No || coq ||
+|| Transitive Group Action || 37 || No || coq ||
+|| Solvable Group || 37 || No || coq ||
+|| Primitive Element || 39 || No || coq ||
+|| Frobenius Automorphism || 40 || No || coq ||
+|| Character of a Group || 43 || No || coq ||
+|| Automorphism Group || 43 || No || coq ||
+|| Fixed Field || 43 || No || coq ||
+|| Galois (Normal) Extension || 47 || No || coq ||
+|| Lattice || 48 || No || coq ||
 
 
 We may not need all these definitions for the main goal.  For example, I don't know if we'll have
@@ -94,9 +94,9 @@ The columns are
 
 || _*Rotman #*_ || _*Brief Description*_|| _*Done*_ || _*Coq*_ || _*Date*_ ||
 || *Rings* || || || || ||
-|| Theorem 1 || || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] || 6/1 ||
-|| Assumed 1a || Polynomials form a ring || *No* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#mul0r coq] || 6/1 ||
-|| Theorem 2 || || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#domain_cancel coq] || 6/1 ||
+|| Theorem 1 || || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/poly2.html#mul0r coq] || 6/1 ||
+|| Assumed 1a || Polynomials form a ring || *No* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/poly2.html#mul0r coq] || 6/1 ||
+|| Theorem 2 || || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/poly2.html#domain_cancel coq] || 6/1 ||
 || Exercise 4 || || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/galois.html#RingThm3 coq] || 6/1 ||
 || Exercise 7 || || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
 || Exercise 10 || || No || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/galois.html#RingThm3 coq] || 8/31 ||
