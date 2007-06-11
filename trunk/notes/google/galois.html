@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+            "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>A Deconstruction of the Fundamental Theorem Galois Theory
+</TITLE>
+
+<META http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<META name="GENERATOR" content="hevea 1.09">
+<STYLE type="text/css">
+.li-itemize{margin:1ex 0ex;}
+.li-enumerate{margin:1ex 0ex;}
+.dd-description{margin:0ex 0ex 1ex 4ex;}
+.dt-description{margin:0ex;}
+.toc{list-style:none;}
+.thefootnotes{text-align:left;margin:0ex;}
+.dt-thefootnotes{margin:0em;}
+.dd-thefootnotes{margin:0em 0em 0em 2em;}
+.footnoterule{margin:1em auto 1em 0px;width:50%;}
+.caption{padding-left:2ex; padding-right:2ex; margin-left:auto; margin-right:auto}
+.title{margin:auto;text-align:center}
+.center{text-align:center;margin-left:auto;margin-right:auto;}
+.flushleft{text-align:left;margin-left:0ex;margin-right:auto;}
+.flushright{text-align:right;margin-left:auto;margin-right:0ex;}
+DIV TABLE{margin-left:inherit;margin-right:inherit;}
+PRE{text-align:left;margin-left:0ex;margin-right:auto;}
+BLOCKQUOTE{margin-left:4ex;margin-right:4ex;text-align:left;}
+TD P{margin:0px;}
+.boxed{border:1px solid black}
+.textboxed{border:1px solid black}
+.vbar{border:none;width:2px;background-color:black;}
+.hbar{border:none;height:2px;width:100%;background-color:black;}
+.hfill{border:none;height:1px;width:200%;background-color:black;}
+.vdisplay{border-collapse:separate;border-spacing:2px;width:auto; empty-cells:show; border:2px solid red;}
+.vdcell{white-space:nowrap;padding:0px;width:auto; border:2px solid green;}
+.display{border-collapse:separate;border-spacing:2px;width:auto; border:none;}
+.dcell{white-space:nowrap;padding:0px;width:auto; border:none;}
+.dcenter{margin:0ex auto;}
+.vdcenter{border:solid #FF8000 2px; margin:0ex auto;}
+.minipage{text-align:left; margin-left:0em; margin-right:auto;}
+.marginpar{border:solid thin black; width:20%; text-align:left;}
+.marginparleft{float:left; margin-left:0ex; margin-right:1ex;}
+.marginparright{float:right; margin-left:1ex; margin-right:0ex;}
+.theorem{text-align:left;margin:1ex auto 1ex 0ex;}
+.part{margin:auto;text-align:center}
+</STYLE>
+</HEAD>
+<BODY >
+<!--HEVEA command line is: hevea galois.tex -->
+<!--CUT DEF section 1 --><TABLE CLASS="title"><TR><TD><H1 CLASS="titlemain">A Deconstruction of the Fundamental Theorem Galois Theory</H1><H3 CLASS="titlerest">Sean McLaughlin</H3></TD></TR>
+</TABLE><BLOCKQUOTE CLASS="abstract"><B>Abstract: </B> 
+This document breaks down the proof of the Fundamental Theorem of Galois Theory
+into a sequence of lemmas amenable to formalization in the Coq proof assistant.
+</BLOCKQUOTE><P>This document breaks down the proof of the Fundamental Theorem of Galois Theory
+into a sequence of lemmas amenable to formalization in the Coq proof assistant.
+The numbering follows Rotman [<A HREF="#Rotman:GaloisTheory"><CITE>1</CITE></A>]. When a theorem of
+Rotman is broken down further for purposes of the formalization
+process, we give sub-letters to the numbering system of Rotman.
+Thus, for example, the Fundamental Theorem itself is theorem 63 in Rotman.
+We will need to prove it in smaller steps. Thus, we will have
+Lemma 63a, Lemma 63b, ... etc.</P><!--TOC section Rings-->
+<H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc1">1</A>&#XA0;&#XA0;Rings</H2><!--SEC END --><P>[1a] A <B>commutative ring with 1</B>, or just a <B>ring</B>, is a set <I>R</I> 
+equipped with two binary operations, <I>a</I> + <I>b</I>,<I>ab</I> such that
+</P><OL CLASS="enumerate" type=1><LI CLASS="li-enumerate">[(i)]
+<I>R</I> is an abelian group under addition
+</LI><LI CLASS="li-enumerate">multiplication is commutation and associative
+</LI><LI CLASS="li-enumerate">1 <I>r</I> = <I>r</I>
+</LI><LI CLASS="li-enumerate"><I>r</I>(<I>s</I>+<I>t</I>) = <I>rs</I>+<I>rt</I>
+</LI></OL><!--TOC subsection Polynomials-->
+<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc2">1.1</A>&#XA0;&#XA0;Polynomials</H3><!--SEC END --><P>[1b] A <B>polynomial over</B> <I>R</I> is a sequence
+</P><TABLE CLASS="display dcenter"><TR VALIGN="middle"><TD CLASS="dcell"><I>f</I>(<I>x</I>)&#XA0;=&#XA0;(<I>r</I><SUB>0</SUB>,<I>r</I><SUB>1</SUB>,&#X2026;,<I>r</I><SUB><I>n</I></SUB>,0,0,&#X2026;)</TD></TR>
+</TABLE><P>
+with <I>r</I><SUB><I>i</I></SUB>&#X2208; <I>R</I> and <I>r</I><SUB><I>i</I></SUB>=0 for <I>i</I>&gt;<I>n</I>. Equality and addition are
+defined componentwise. The product is defined by the usual
+polynomial multiplication.
+Denote the set of such polynomials by <I>R</I>[<I>x</I>]. 
+ </P><P>[1c]
+If <I>R</I> is a ring, then so is <I>R</I>[<I>x</I>].
+ </P><P>[1d]
+The <B>leading coefficient</B> of a polynomial 
+(<I>r</I><SUB>0</SUB>,<I>r</I><SUB>1</SUB>,&#X2026;,<I>r</I><SUB><I>n</I></SUB>,0,0,&#X2026;) is <I>r</I><SUB><I>n</I></SUB> where 
+<I>n</I> is the largest index with nonzero coefficent.
+ </P><P> 
+The largest index of a nonzero coefficient is called the <B>degree</B> of the polynomial.
+ </P><P> 
+A polynomial is <B>monic</B> if its leading coefficient is 1.
+</P><P> 
+A polynomial is <B>constant</B> if it is either the 0 polynomial, or has degree 0.
+</P><!--TOC section Galois Theory-->
+<H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc3">2</A>&#XA0;&#XA0;Galois Theory</H2><!--SEC END --><P>[63][ABC] </P><!--TOC section References-->
+<H2 CLASS="section"><!--SEC ANCHOR -->References</H2><!--SEC END --><DL CLASS="thebibliography"><DT CLASS="dt-thebibliography">
+<A NAME="Rotman:GaloisTheory"><FONT COLOR=purple>[1]</FONT></A></DT><DD CLASS="dd-thebibliography">
+J.&#XA0;Rotman.
+<EM>Galois Theory</EM>.
+Springer Verlag, 1990.</DD></DL><!--CUT END -->
+<!--HTMLFOOT-->
+<!--ENDHTML-->
+<!--FOOTER-->
+<HR SIZE=2><BLOCKQUOTE CLASS="quote"><EM>This document was translated from L<sup>A</sup>T<sub>E</sub>X by
+</EM><A HREF="http://hevea.inria.fr/index.html"><EM>H</EM><EM><FONT SIZE=2><sup>E</sup></FONT></EM><EM>V</EM><EM><FONT SIZE=2><sup>E</sup></FONT></EM><EM>A</EM></A><EM>.</EM></BLOCKQUOTE></BODY>
+</HTML>

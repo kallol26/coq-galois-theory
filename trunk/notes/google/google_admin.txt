@@ -1,0 +1,76 @@
+
+
+Hi Tom,
+
+  I apologize for not contacting you sooner.  Somehow work
+never seems to stop here!  I realize there's only 5 days until
+the official beginning.  This email will deal with the 4 issues
+you brought up in the last email.
+
+1) Administrative details
+
+I've submitted my tax form to Google, and am waiting until
+this afternoon to get an authoritative looking letter proving
+my matriculation at CMU.  I'll send that to them today.
+As far as I can tell, that's all that needs to be done
+from an administrative point of view.  If I'm forgetting
+anything, e.g. other forms, please let me know.  
+
+2) Repository
+
+The Gonthier group at Microsoft/Inria has their own 
+svn repository. My work will officially live in a directory in
+that repository.  It will depend on other files from the
+repository to compile, thus it is natural that the main copy
+live there.  
+
+I created a project to host my own contribution (not including
+the Gonthier libraries) at Google, address 
+
+http://code.google.com/p/coq-galois-theory/
+
+It contains only an empty file 'test.txt' at the moment.
+
+As Google would like the sources mirrored on their server,
+my idea is to do a weekly transfer of must my directory
+to the Google server.  I guess that will mean
+using unison to sync a pair of directories, one whose
+.svn files belong to Inria, the other to Google. 
+Seems like it shouldn't be too bad to update once a week.
+This code won't compile, but at least the code will be 
+available for review.
+
+3) License 
+
+I chose the new BSD license for the project after receiving
+this message from Gonthier:
+
+"Anything we do in the lab will be under either BSD or Cecill-B
+(euro-BSD), as (L)GPL is not "open" for MS. Note however that we
+haven’t made a public distribution of ssreflect for Coq v8.1 (I’m
+still struggling with some major internal changes which I want to get
+to work before advertising the package). The older Coq v8.0 ssreflect
+was distributed under the MS open-source license."
+
+Is that cool with you?  
+
+4) Weekly check-ins
+
+Let's decide to have some kind of email correspondence
+every Monday.   I'll be available on IM (GoogleTalk address
+seanmcl@gmail.com), or phone at my office 412-268-8078
+or my cel 412-855-9701.  If you'd like to speak on the
+phone however, let's plan in advance so I can be sure
+I'm in the office.  
+
+5) Plan
+
+This will come in a separate email shortly.  This one has
+become long enough that a blank slate seems appropriate.
+
+So let's plan on email this Monday the 28th for our first
+check-in.
+
+Best,
+
+Sean

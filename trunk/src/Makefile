@@ -9,7 +9,7 @@ SSR_DIR = ../../trunk
 # Do not edit below this line                                                   
 #-------------------------------------------------------------------------------
 
-FILES = ssr constructive_lib classical_lib lib ring
+FILES = ssr constructive_lib classical_lib lib ring nzring poly
 GLOB_FILE = .glob
 V_FILES = $(addsuffix .v,$(FILES))
 VO_FILES = $(addsuffix .vo,$(FILES))

@@ -1,0 +1,99 @@
+
+\documentclass{article} 
+
+\usepackage[open-square,define-standard-theorems,roman-theorems,dont-number-theorems]{QED}
+\usepackage{basic,enumerate}
+
+\title{A Deconstruction of the Fundamental Theorem Galois Theory}
+\author{Sean McLaughlin}
+
+
+%-------------------------------------------------------------------------------
+% Defs                                                                          
+%-------------------------------------------------------------------------------
+
+\newcommand{\Extension}[2][F]{#2/#1}
+\newcommand{\GalGroup}[1]{\mbox{Gal}(#1)}
+
+%-------------------------------------------------------------------------------
+% Top                                                                           
+%-------------------------------------------------------------------------------
+
+\begin{document} 
+\maketitle
+\begin{abstract} 
+This document breaks down the proof of the Fundamental Theorem of Galois Theory
+into a sequence of lemmas amenable to formalization in the Coq proof assistant.
+\end{abstract} 
+
+This document breaks down the proof of the Fundamental Theorem of Galois Theory
+into a sequence of lemmas amenable to formalization in the Coq proof assistant.
+The definitions and theorems are labelled with two numbers. The first is
+a global identifier.  The second is the corresponding theorem in 
+Rotman \cite{Rotman:GaloisTheory}. 
+
+%-------------------------------------------------------------------------------
+% Rings                                                                         
+%-------------------------------------------------------------------------------
+
+\section{Rings}
+
+\begin{Definition}[1a] A \textbf{commutative ring with 1}, or just a \textbf{ring}, is a set $R$ 
+equipped with two binary operations, $a + b,ab$ such that
+\begin{enumerate}[(i)]
+\item $R$ is an abelian group under addition
+\item multiplication is commutation and associative
+\item $1 r = r$
+\item $r(s+t) = rs+rt$
+\end{enumerate}  
+\end{Definition} 
+
+\subsection{Polynomials}
+
+\begin{Definition}[1b] A \textbf{polynomial over} $R$ is a sequence
+$$f(x) = (r_0,r_1,\ldots,r_n,0,0,\ldots)$$
+with $r_i\in R$ and $r_i=0$ for $i>n$.  Equality and addition are
+defined componentwise.  The product is defined by the usual
+polynomial multiplication.
+Denote the set of such polynomials by $R[x]$. 
+\end{Definition} 
+
+\begin{Theorem}[1c]
+  If $R$ is a ring, then so is $R[x]$.
+\end{Theorem} 
+
+\begin{Definition}[1d]
+  The \textbf{leading coefficient} of a polynomial 
+$(r_0,r_1,\ldots,r_n,0,0,\ldots)$ is $r_n$ where 
+  $n$ is the largest index with nonzero coefficent.
+\end{Definition} 
+
+\begin{Definition} 
+  The largest index of a nonzero coefficient is called the \textbf{degree} of the polynomial.
+\end{Definition} 
+
+\begin{Definition} 
+  A polynomial is \textbf{monic} if its leading coefficient is 1.
+\end{Definition}
+
+\begin{Definition} 
+  A polynomial is \textbf{constant} if it is either the 0 polynomial, or has degree 0.
+\end{Definition}
+
+%-------------------------------------------------------------------------------
+% Galois Theory                                                                 
+%-------------------------------------------------------------------------------
+
+\section{Galois Theory}
+
+\begin{Theorem}[63 (Fundamental Theorem of Galois Theory)]
+  Let $\Extension{E}$ be a Galois extension with 
+
+\end{Theorem} 
+
+\bibliographystyle{abbrv}
+
+\bibliography{all}
+
+\end{document} 
+
