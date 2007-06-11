@@ -1,0 +1,102 @@
+
+Hi Tom,
+
+  This email contains answers the questions you posed in the last email.
+An email with a detailed time-line will follow shortly.
+
+- What are you starting with? 
+
+  The group at the Microsoft/Inria lab in Paris has some
+significant work done in basic group theory and linear
+algebra.  I'm waiting on whether it's OK with Gonthier
+to mirror that code on the Google project site so you
+can compile it.  I'm not sure how he'll feel about that,
+but I'll let you know.  I'm not very familiar with the 
+code base myself, as it has changed a good deal since last
+year, but it seems the fundamental definitions I'll need,
+at least in respect to group theory.
+  I did some work with polynomials last year.  In fact,
+this is how I learned Coq, proving properties of polynomial
+rings, but since the definition of groups and rings has
+changed, I'll need to redo most of that work.  Luckily
+I've learned a bit since the first time, so it should go much 
+faster.
+
+- Are you going to use anything from the Coq contrib directory (eg groups)?
+
+No, not the standard distribution code.  Gonthier has all his own 
+libraries he developed for the 4 Color Theorem that I'll be using.
+I'm more familiar with those.
+
+-  You mention that Gonthier has a representation of algebraic structures.  
+-  Is that coded up, or on paper?
+
+Coded up.  I need to work out with Georges how I can share that
+info with you and the rest of the community.  Hopefully we'll
+get something workable by Monday.  I have access to their repository
+anyway, so I'll at least be able to begin hacking immediately, even if 
+it takes awhile for Georges to talk to Microsoft/Inria.
+
+
+- Did you look at any of the background for formalizing Galois during
+- your internship with Gonthier?
+
+Yes.  Polynomial rings are crucial, as are basic properties of
+groups/subgroups, etc.  
+
+
+- Do you want to work bottom-up, linearly following Milne's notes?
+- Or sketch out all the propositions, set their proofs to be 'Admitted'
+- and then go back to fill in the proofs?  If I were doing this, I'd
+- prefer the latter, since the proofs can be filled in in any order.
+
+There's an interesting tension between forward and backward reasoning.
+In my experience, it is important to get the data structures correct
+before doing much theorem proving, and the way to know if you
+got it right is to do a bunch of basic proofs using the structures.
+If things aren't working out, it is sometimes necessary to redo
+the definitions, meaning you need to redo all the following theorems.
+
+Once the definitions are fixed though, it is easy to get lost
+in the details of a lemma, and lose sight of the goal.  Thus,
+backward reasoning seems ideal in that case.  Thus, I suspect
+the beginning few weeks will consist mostly of working out
+the definitions and proving some simple consequences.  By July
+I hope to be working backward from the goal.
+
+
+- Are the proofs the majority of the work, or are there significant
+- hurdles in modeling the variety of algebraic structures?  
+
+It takes a good deal of experience with Coq and mathematical
+experimentation to get the structures right.  It is critically
+important, as any theorems will depend crucially on the definitions,
+and indeed, because of the nature of tactical theorem proving,
+any tweak of the definitions will be sure to break the theorems 
+already proved.  Thus, it's important to do a good job on the definitions.
+Once those are fixed, and in our case Gonthier has many of the necessary
+definitions figured out already, 
+the bulk of the work will certainly be the theorems.  
+
+-Are there other difficulties I'm overlooking?
+
+Probably!  But that's part of the fun of formalization.
+It exposes all overlooking!
+
+- Can the time-line make explicit reference to Milne's notes?
+- E.g. By day x the statements of all propositions up to page y will be
+- done, and the proof of all propositions up to page y/2 will be done.
+
+This is a good idea in principle.  We can certainly start with such
+a plan, as long as we can revise the schedule as difficulties come
+up.  Perhaps this would be a good thing to discuss on our Monday
+email sessions, how closely we have satisfied the goals of the week,
+and how the greater/lesser progress effects the remaining weeks.
+
+I'll send a detailed time-line in another email.  Perhaps this
+should be in the repository, and we can revise it and keep 
+a history for reference.
+
+Best,
+
+Sean
