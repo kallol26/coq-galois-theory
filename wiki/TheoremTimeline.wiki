@@ -32,7 +32,7 @@ The columns are
 || Subring || 6 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#Sub_ring coq] ||
 || Subfield || 6 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#Sub_field coq] ||
 || Field of Fractions || 6 || No || coq ||
-|| Homomorphism || 7 ||*Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#Homo coq] ||
+|| Homomorphism || 7 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#Homo coq] ||
 || Isomorphism || 7 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#iso coq] ||
 || Ideal || 8 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#Ideal coq] ||
 || Kernel || 9 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#kernel coq] ||
@@ -40,7 +40,7 @@ The columns are
 || Principle Ideal Domain || 12 || No || coq ||
 || Divides || 12 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#pdivides coq] ||
 || Greatest Common Divisor || 12 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/ring.html#gcd coq] ||
-|| Irreducible Polynomial || 15 || No || coq ||
+|| Irreducible Polynomial || 15 || *Yes* || [http://www.cs.cmu.edu/~seanmcl/software/galois/doc/poly2.html#irreducible coq] ||
 || Prime Ideal || 17 || No || coq ||
 || Maximal Ideal || 18 || No || coq ||
 || Splits || 19 || No || coq ||
