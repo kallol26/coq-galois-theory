@@ -1,0 +1,2486 @@
+Fring_sig
+R199 ring_sig RING.base
+R191 ring_sig RING.base
+R183 ring_sig RING.base
+R240 ring_sig RING.base
+R232 ring_sig RING.base
+R224 ring_sig RING.base
+R273 ring_sig RING.base
+R265 ring_sig RING.base
+R299 ring_sig RING.base
+R324 ring_sig RING.base
+R356 ring_sig RING.addr
+R394 ring_sig RING.mulr
+R432 ring_sig "x1 + x2"
+R434 ring_sig RING.oppr
+R464 ring_sig RING.oppr
+R491 ring_sig RING.zeror
+R516 ring_sig RING.oner
+R556 ring_sig "x1 + x2"
+R596 ring_sig "x1 * x2"
+R636 Coq.Init.Logic "x = y" type_scope
+R632 ring_sig "x1 + x2"
+R640 ring_sig "x1 + x2"
+R686 Coq.Init.Logic "x = y" type_scope
+R676 ring_sig "x1 + x2"
+R681 ring_sig "x1 + x2"
+R694 ring_sig "x1 + x2"
+R691 ring_sig "x1 + x2"
+R733 Coq.Init.Logic "x = y" type_scope
+R729 ring_sig "x1 + x2"
+R731 ring_sig "0"
+R770 Coq.Init.Logic "x = y" type_scope
+R766 ring_sig "x1 + x2"
+R763 ring_sig "- x"
+R772 ring_sig "0"
+R808 Coq.Init.Logic "x = y" type_scope
+R804 ring_sig "x1 * x2"
+R812 ring_sig "x1 * x2"
+R858 Coq.Init.Logic "x = y" type_scope
+R848 ring_sig "x1 * x2"
+R853 ring_sig "x1 * x2"
+R866 ring_sig "x1 * x2"
+R862 ring_sig "x1 * x2"
+R903 Coq.Init.Logic "x = y" type_scope
+R899 ring_sig "x1 * x2"
+R897 ring_sig "1"
+R957 Coq.Init.Logic "x = y" type_scope
+R950 ring_sig "x1 * x2"
+R946 ring_sig "x1 + x2"
+R967 ring_sig "x1 + x2"
+R963 ring_sig "x1 * x2"
+R975 ring_sig "x1 * x2"
+R1031 Coq.Init.Logic "x = y" type_scope
+R1019 ring_sig "x1 * x2"
+R1025 ring_sig "x1 + x2"
+R1041 ring_sig "x1 + x2"
+R1037 ring_sig "x1 * x2"
+R1049 ring_sig "x1 * x2"
+R1144 ring_sig RING_LEMMAS.R.addr
+R1171 ring_sig RING_LEMMAS.R.mulr
+R1280 ring_sig "x1 + x2"
+R1282 ring_sig RING_LEMMAS.R.oppr
+R1314 ring_sig RING_LEMMAS.R.oppr
+R1343 ring_sig RING_LEMMAS.R.zeror
+R1370 ring_sig RING_LEMMAS.R.oner
+R1412 ring_sig "x1 + x2"
+R1452 ring_sig "x1 * x2"
+R1491 Coq.Init.Logic "x = y" type_scope
+R1487 ring_sig "x1 * x2"
+R1489 ring_sig "1"
+R1528 Coq.Init.Logic "x = y" type_scope
+R1524 ring_sig "x1 + x2"
+R1522 ring_sig "0"
+R1565 Coq.Init.Logic "x = y" type_scope
+R1561 ring_sig "x1 * x2"
+R1559 ring_sig "0"
+R1567 ring_sig "0"
+R1602 Coq.Init.Logic "x = y" type_scope
+R1598 ring_sig "x1 * x2"
+R1600 ring_sig "0"
+R1604 ring_sig "0"
+R1639 Coq.Init.Logic "x = y" type_scope
+R1634 ring_sig "x1 + x2"
+R1636 ring_sig "- x"
+R1641 ring_sig "0"
+R1674 funs injective
+R1724 funs injective
+R1771 funs cancel
+R1794 ring_sig "- x"
+R1828 funs cancel
+R1842 ring_sig "- x"
+R1893 funs cancel
+R1918 ring_sig "- x"
+R1885 ring_sig RING_LEMMAS.R.base
+R1952 funs cancel
+R1967 ring_sig "- x"
+R2018 Coq.Init.Logic "x = y" type_scope
+R2012 ring_sig "- x"
+R2014 ring_sig "- x"
+R2086 Coq.Init.Logic "x = y" type_scope
+R2077 Coq.Init.Logic "x = y" type_scope
+R2072 ring_sig "x1 + x2"
+R2079 ring_sig "0"
+R2063 Coq.Init.Logic "x = y" type_scope
+R2059 ring_sig "x1 + x2"
+R2065 ring_sig "0"
+R2137 Coq.Init.Logic "x = y" type_scope
+R2139 ring_sig "- x"
+R2128 Coq.Init.Logic "x = y" type_scope
+R2124 ring_sig "x1 + x2"
+R2130 ring_sig "0"
+R2183 Coq.Init.Logic "x = y" type_scope
+R2179 ring_sig "x1 * x2"
+R2175 ring_sig "- x"
+R2185 ring_sig "- x"
+R2190 ring_sig "x1 * x2"
+R2235 Coq.Init.Logic "x = y" type_scope
+R2229 ring_sig "x1 * x2"
+R2231 ring_sig "- x"
+R2237 ring_sig "- x"
+R2242 ring_sig "x1 * x2"
+R2292 Coq.Init.Logic "x = y" type_scope
+R2286 ring_sig "x1 * x2"
+R2282 ring_sig "- x"
+R2288 ring_sig "- x"
+R2296 ring_sig "x1 * x2"
+R2344 Coq.Init.Logic "x = y" type_scope
+R2346 ring_sig "- x"
+R2335 Coq.Init.Logic "x = y" type_scope
+R2331 ring_sig "- x"
+R2394 Coq.Init.Logic "x = y" type_scope
+R2384 ring_sig "x1 + x2"
+R2389 ring_sig "x1 + x2"
+R2398 ring_sig "x1 + x2"
+R2403 ring_sig "x1 + x2"
+R2428 Coq.Init.Logic "x = y" type_scope
+R2424 ring_sig "- x"
+R2426 ring_sig "0"
+R2430 ring_sig "0"
+R2467 Coq.Init.Logic "x = y" type_scope
+R2463 eqtype "x '==' y" eq_scope
+R2460 ring_sig "- x"
+R2466 ring_sig "0"
+R2474 eqtype "x '==' y" eq_scope
+R2477 ring_sig "0"
+R2520 Coq.Init.Logic "x = y" type_scope
+R2516 ring_sig "x1 * x2"
+R2511 ring_sig "- x"
+R2513 ring_sig "1"
+R2522 ring_sig "- x"
+R2571 Coq.Init.Logic "x = y" type_scope
+R2565 ring_sig "x1 * x2"
+R2560 ring_sig "- x"
+R2562 ring_sig "1"
+R2567 ring_sig "- x"
+R2612 Coq.Init.Logic "x = y" type_scope
+R2605 ring_sig "x1 * x2"
+R2600 ring_sig "- x"
+R2602 ring_sig "1"
+R2607 ring_sig "- x"
+R2609 ring_sig "1"
+R2614 ring_sig "1"
+R2658 Coq.Init.Logic "x = y" type_scope
+R2660 ring_sig "0"
+R2639 Coq.Init.Logic "x = y" type_scope
+R2637 ring_sig "1"
+R2641 ring_sig "0"
+R2706 Coq.Init.Logic "x = y" type_scope
+R2696 ring_sig "x1 * x2"
+R2701 ring_sig "x1 * x2"
+R2710 ring_sig "x1 * x2"
+R2715 ring_sig "x1 * x2"
+R2753 Coq.Init.Logic "x = y" type_scope
+R2749 ring_sig "x - y"
+R2751 ring_sig "0"
+R2797 Coq.Init.Logic "x = y" type_scope
+R2788 ring_sig "- x"
+R2792 ring_sig "x1 + x2"
+R2803 ring_sig "x - y"
+R2799 ring_sig "- x"
+R2840 Coq.Init.Logic "x = y" type_scope
+R2836 ring_sig "x - y"
+R2834 ring_sig "0"
+R2842 ring_sig "- x"
+R2962 ring_sig R.addr
+R2987 ring_sig R.mulr
+R3012 ring_sig R.oppr
+R3091 ring_sig R.addC
+R3116 ring_sig R.addA
+R3142 ring_sig R.addr0
+R3168 ring_sig R.oppL
+R3193 ring_sig R.mulC
+R3218 ring_sig R.mulA
+R3244 ring_sig R.mul1r
+R3272 ring_sig R.distPM
+R3301 ring_sig R.distMP
+R3334 ring_sig R.addr
+R3372 ring_sig R.mulr
+R3406 ring_sig R.oppr
+R3433 ring_sig R.zeror
+R3458 ring_sig R.oner
+R3489 ring_sig "x1 + x2"
+R3491 ring_sig R.oppr
+R3533 Coq.Init.Logic "x = y" type_scope
+R3529 ring_sig "x1 * x2"
+R3531 ring_sig "1"
+R3622 Coq.Init.Logic "x = y" type_scope
+R3618 ring_sig "x1 + x2"
+R3616 ring_sig "0"
+R3711 Coq.Init.Logic "x = y" type_scope
+R3706 ring_sig "x1 + x2"
+R3708 ring_sig "- x"
+R3713 ring_sig "0"
+R3794 funs injective
+R3844 funs congr1
+R3858 ring_sig "- x"
+R3886 ring_sig RingLemmas.add0r
+R3844 funs congr1
+R3858 ring_sig "- x"
+R3886 ring_sig RingLemmas.add0r
+R3927 funs injective
+R3991 ring_sig "x1 + x2"
+R4008 ring_sig RingLemmas.addr_injl
+R3991 ring_sig "x1 + x2"
+R4008 ring_sig RingLemmas.addr_injl
+R4049 funs cancel
+R4072 ring_sig "- x"
+R4119 ring_sig RingLemmas.add0r
+R4119 ring_sig RingLemmas.add0r
+R4157 funs cancel
+R4171 ring_sig "- x"
+R4222 ring_sig RingLemmas.oppR
+R4227 ring_sig RingLemmas.add0r
+R4222 ring_sig RingLemmas.oppR
+R4227 ring_sig RingLemmas.add0r
+R4264 funs cancel
+R4289 ring_sig "- x"
+R4332 ring_sig RingLemmas.oppR
+R4332 ring_sig RingLemmas.oppR
+R4375 funs cancel
+R4390 ring_sig "- x"
+R4493 Coq.Init.Logic "x = y" type_scope
+R4487 ring_sig "- x"
+R4489 ring_sig "- x"
+R4527 ring_sig RingLemmas.addr_injr
+R4538 ring_sig "- x"
+R4558 ring_sig RingLemmas.oppR
+R4527 ring_sig RingLemmas.addr_injr
+R4538 ring_sig "- x"
+R4558 ring_sig RingLemmas.oppR
+R4631 Coq.Init.Logic "x = y" type_scope
+R4622 Coq.Init.Logic "x = y" type_scope
+R4617 ring_sig "x1 + x2"
+R4624 ring_sig "0"
+R4608 Coq.Init.Logic "x = y" type_scope
+R4604 ring_sig "x1 + x2"
+R4610 ring_sig "0"
+R4675 ring_sig RingLemmas.addr_injl
+R4675 ring_sig RingLemmas.addr_injl
+R4752 Coq.Init.Logic "x = y" type_scope
+R4754 ring_sig "- x"
+R4743 Coq.Init.Logic "x = y" type_scope
+R4739 ring_sig "x1 + x2"
+R4745 ring_sig "0"
+R4788 ring_sig RingLemmas.opp_uniq
+R4817 ring_sig RingLemmas.oppR
+R4788 ring_sig RingLemmas.opp_uniq
+R4817 ring_sig RingLemmas.oppR
+R4969 Coq.Init.Logic "x = y" type_scope
+R4965 ring_sig "x1 * x2"
+R4963 ring_sig "0"
+R4971 ring_sig "0"
+R5002 ring_sig RingLemmas.addr_injr
+R5015 ring_sig "x1 * x2"
+R5013 ring_sig "0"
+R5039 ring_sig RingLemmas.add0r
+R5002 ring_sig RingLemmas.addr_injr
+R5015 ring_sig "x1 * x2"
+R5013 ring_sig "0"
+R5039 ring_sig RingLemmas.add0r
+R5082 Coq.Init.Logic "x = y" type_scope
+R5078 ring_sig "x1 * x2"
+R5080 ring_sig "0"
+R5084 ring_sig "0"
+R5115 ring_sig RingLemmas.addr_injr
+R5128 ring_sig "x1 * x2"
+R5130 ring_sig "0"
+R5152 ring_sig RingLemmas.add0r
+R5115 ring_sig RingLemmas.addr_injr
+R5128 ring_sig "x1 * x2"
+R5130 ring_sig "0"
+R5152 ring_sig RingLemmas.add0r
+R5202 Coq.Init.Logic "x = y" type_scope
+R5198 ring_sig "x1 * x2"
+R5194 ring_sig "- x"
+R5204 ring_sig "- x"
+R5209 ring_sig "x1 * x2"
+R5245 ring_sig RingLemmas.opp_uniq
+R5257 ring_sig "x1 * x2"
+R5280 ring_sig RingLemmas.oppR
+R5286 ring_sig RingLemmas.mul0r
+R5245 ring_sig RingLemmas.opp_uniq
+R5257 ring_sig "x1 * x2"
+R5280 ring_sig RingLemmas.oppR
+R5286 ring_sig RingLemmas.mul0r
+R5280 ring_sig RingLemmas.oppR
+R5286 ring_sig RingLemmas.mul0r
+R5339 Coq.Init.Logic "x = y" type_scope
+R5333 ring_sig "x1 * x2"
+R5335 ring_sig "- x"
+R5341 ring_sig "- x"
+R5346 ring_sig "x1 * x2"
+R5382 ring_sig RingLemmas.opp_uniq
+R5394 ring_sig "x1 * x2"
+R5418 ring_sig RingLemmas.oppR
+R5424 ring_sig RingLemmas.mulr0
+R5382 ring_sig RingLemmas.opp_uniq
+R5394 ring_sig "x1 * x2"
+R5418 ring_sig RingLemmas.oppR
+R5424 ring_sig RingLemmas.mulr0
+R5418 ring_sig RingLemmas.oppR
+R5424 ring_sig RingLemmas.mulr0
+R5479 Coq.Init.Logic "x = y" type_scope
+R5473 ring_sig "x1 * x2"
+R5469 ring_sig "- x"
+R5475 ring_sig "- x"
+R5483 ring_sig "x1 * x2"
+R5518 ring_sig RingLemmas.mul_oppR
+R5527 ring_sig RingLemmas.mul_oppL
+R5536 ring_sig RingLemmas.opp_opp
+R5518 ring_sig RingLemmas.mul_oppR
+R5527 ring_sig RingLemmas.mul_oppL
+R5536 ring_sig RingLemmas.opp_opp
+R5592 Coq.Init.Logic "x = y" type_scope
+R5594 ring_sig "- x"
+R5583 Coq.Init.Logic "x = y" type_scope
+R5579 ring_sig "- x"
+R5652 ring_sig RingLemmas.opp_opp
+R5652 ring_sig RingLemmas.opp_opp
+R5708 Coq.Init.Logic "x = y" type_scope
+R5698 ring_sig "x1 + x2"
+R5703 ring_sig "x1 + x2"
+R5712 ring_sig "x1 + x2"
+R5717 ring_sig "x1 + x2"
+R5763 ring_sig "x1 + x2"
+R5763 ring_sig "x1 + x2"
+R5801 Coq.Init.Logic "x = y" type_scope
+R5797 ring_sig "- x"
+R5799 ring_sig "0"
+R5803 ring_sig "0"
+R5824 ring_sig RingLemmas.addr_injr
+R5834 ring_sig "0"
+R5824 ring_sig RingLemmas.addr_injr
+R5834 ring_sig "0"
+R5897 Coq.Init.Logic "x = y" type_scope
+R5893 eqtype "x '==' y" eq_scope
+R5890 ring_sig "- x"
+R5896 ring_sig "0"
+R5904 eqtype "x '==' y" eq_scope
+R5907 ring_sig "0"
+R5947 eqtype eqP
+R5947 eqtype eqP
+R5964 eqtype "x '==' y" eq_scope
+R5998 eqtype eqP
+R6005 ring_sig RingLemmas.opp0
+R5964 eqtype "x '==' y" eq_scope
+R5998 eqtype eqP
+R6005 ring_sig RingLemmas.opp0
+R6018 funs congr1
+R6018 funs congr1
+R6042 ring_sig RingLemmas.opp_opp
+R6050 ring_sig RingLemmas.opp0
+R6042 ring_sig RingLemmas.opp_opp
+R6050 ring_sig RingLemmas.opp0
+R6076 eqtype eq_refl
+R6076 eqtype eq_refl
+R6256 Coq.Init.Logic "x = y" type_scope
+R6252 ring_sig "x1 * x2"
+R6247 ring_sig "- x"
+R6249 ring_sig "1"
+R6258 ring_sig "- x"
+R6291 ring_sig RingLemmas.addr_injl
+R6313 ring_sig RingLemmas.oppR
+R6318 ring_sig RingLemmas.mul_oppL
+R6333 ring_sig RingLemmas.oppR
+R6291 ring_sig RingLemmas.addr_injl
+R6313 ring_sig RingLemmas.oppR
+R6318 ring_sig RingLemmas.mul_oppL
+R6333 ring_sig RingLemmas.oppR
+R6499 Coq.Init.Logic "x = y" type_scope
+R6493 ring_sig "x1 * x2"
+R6488 ring_sig "- x"
+R6490 ring_sig "1"
+R6495 ring_sig "- x"
+R6532 ring_sig RingLemmas.mul_opp1r
+R6542 ring_sig RingLemmas.opp_opp
+R6532 ring_sig RingLemmas.mul_opp1r
+R6542 ring_sig RingLemmas.opp_opp
+R6591 Coq.Init.Logic "x = y" type_scope
+R6584 ring_sig "x1 * x2"
+R6579 ring_sig "- x"
+R6581 ring_sig "1"
+R6586 ring_sig "- x"
+R6588 ring_sig "1"
+R6593 ring_sig "1"
+R6611 ring_sig RingLemmas.mul_opp1_opp
+R6611 ring_sig RingLemmas.mul_opp1_opp
+R6668 Coq.Init.Logic "x = y" type_scope
+R6659 ring_sig "- x"
+R6663 ring_sig "x1 + x2"
+R6674 ring_sig "x - y"
+R6670 ring_sig "- x"
+R6710 ring_sig RingLemmas.mul_opp1r
+R6728 ring_sig RingLemmas.mul_opp1r
+R6710 ring_sig RingLemmas.mul_opp1r
+R6728 ring_sig RingLemmas.mul_opp1r
+R6784 Coq.Init.Logic "x = y" type_scope
+R6786 ring_sig "0"
+R6765 Coq.Init.Logic "x = y" type_scope
+R6763 ring_sig "1"
+R6767 ring_sig "0"
+R6831 ring_sig RingLemmas.mul0r
+R6831 ring_sig RingLemmas.mul0r
+R6874 Coq.Init.Logic "x = y" type_scope
+R6870 ring_sig "x - y"
+R6872 ring_sig "0"
+R6897 ring_sig RingLemmas.opp0
+R6897 ring_sig RingLemmas.opp0
+R6953 Coq.Init.Logic "x = y" type_scope
+R6949 ring_sig "x - y"
+R6947 ring_sig "0"
+R6955 ring_sig "- x"
+R6988 ring_sig RingLemmas.add0r
+R6988 ring_sig RingLemmas.add0r
+R7042 Coq.Init.Logic "x = y" type_scope
+R7032 ring_sig "x1 * x2"
+R7037 ring_sig "x1 * x2"
+R7046 ring_sig "x1 * x2"
+R7051 ring_sig "x1 * x2"
+R7097 ring_sig "x1 * x2"
+R7097 ring_sig "x1 * x2"
+Fring_sig
+R340 Coq.Init.Logic "x = y" type_scope
+R397 Coq.Init.Logic "x = y" type_scope
+R450 Coq.Init.Logic "x = y" type_scope
+R488 Coq.Init.Logic "x = y" type_scope
+R529 Coq.Init.Logic "x = y" type_scope
+R587 Coq.Init.Logic "x = y" type_scope
+R639 Coq.Init.Logic "x = y" type_scope
+R687 Coq.Init.Logic "x = y" type_scope
+R680 constructive_lib "x * y" nati_scope
+R676 constructive_lib "x + y" nati_scope
+R697 constructive_lib "x + y" nati_scope
+R692 constructive_lib "x * y" nati_scope
+R702 constructive_lib "x * y" nati_scope
+R755 Coq.Init.Logic "x = y" type_scope
+Fring_sig
+R340 Coq.Init.Logic "x = y" type_scope
+R397 Coq.Init.Logic "x = y" type_scope
+R450 Coq.Init.Logic "x = y" type_scope
+R488 Coq.Init.Logic "x = y" type_scope
+R529 Coq.Init.Logic "x = y" type_scope
+R587 Coq.Init.Logic "x = y" type_scope
+R639 Coq.Init.Logic "x = y" type_scope
+R687 Coq.Init.Logic "x = y" type_scope
+R680 constructive_lib "x * y" nati_scope
+R676 constructive_lib "x + y" nati_scope
+R697 constructive_lib "x + y" nati_scope
+R692 constructive_lib "x * y" nati_scope
+R702 constructive_lib "x * y" nati_scope
+R755 Coq.Init.Logic "x = y" type_scope
+R812 ring_sig RING.add
+R847 ring_sig RING.mul
+R878 ring_sig RING.opp
+R903 ring_sig RING.zero
+R929 ring_sig RING.one
+R960 ring_sig "x1 + x2"
+R962 ring_sig RING.opp
+R1001 ring_sig "x1 + x2"
+R1039 ring_sig "x1 + x2"
+R1089 Coq.Init.Logic "x = y" type_scope
+R1085 ring_sig "x1 + x2"
+R1083 ring_sig "0"
+R1070 ring_sig RING.ring
+R1137 Coq.Init.Logic "x = y" type_scope
+R1132 ring_sig "x1 + x2"
+R1134 ring_sig "- x"
+R1139 ring_sig "0"
+R1117 ring_sig RING.ring
+R1183 funs injective
+R1170 ring_sig RING.ring
+R1244 funs injective
+R1231 ring_sig RING.ring
+R1302 funs cancel
+R1325 ring_sig "- x"
+R1289 ring_sig RING.ring
+R1370 funs cancel
+R1384 ring_sig "- x"
+R1357 ring_sig RING.ring
+R1437 funs cancel
+R1462 ring_sig "- x"
+R1424 ring_sig RING.ring
+R1507 funs cancel
+R1522 ring_sig "- x"
+R1494 ring_sig RING.ring
+R1584 Coq.Init.Logic "x = y" type_scope
+R1578 ring_sig "- x"
+R1580 ring_sig "- x"
+R1565 ring_sig RING.ring
+R1663 Coq.Init.Logic "x = y" type_scope
+R1654 Coq.Init.Logic "x = y" type_scope
+R1649 ring_sig "x1 + x2"
+R1656 ring_sig "0"
+R1640 Coq.Init.Logic "x = y" type_scope
+R1636 ring_sig "x1 + x2"
+R1642 ring_sig "0"
+R1616 ring_sig RING.ring
+R1725 Coq.Init.Logic "x = y" type_scope
+R1727 ring_sig "- x"
+R1716 Coq.Init.Logic "x = y" type_scope
+R1712 ring_sig "x1 + x2"
+R1718 ring_sig "0"
+R1695 ring_sig RING.ring
+R1775 Coq.Init.Logic "x = y" type_scope
+R1771 ring_sig "x1 * x2"
+R1769 ring_sig "0"
+R1777 ring_sig "0"
+R1756 ring_sig RING.ring
+R1823 Coq.Init.Logic "x = y" type_scope
+R1819 ring_sig "x1 * x2"
+R1821 ring_sig "0"
+R1825 ring_sig "0"
+R1804 ring_sig RING.ring
+R1878 Coq.Init.Logic "x = y" type_scope
+R1874 ring_sig "x1 * x2"
+R1870 ring_sig "- x"
+R1880 ring_sig "- x"
+R1885 ring_sig "x1 * x2"
+R1855 ring_sig RING.ring
+R1941 Coq.Init.Logic "x = y" type_scope
+R1935 ring_sig "x1 * x2"
+R1937 ring_sig "- x"
+R1943 ring_sig "- x"
+R1948 ring_sig "x1 * x2"
+R1918 ring_sig RING.ring
+R2011 Coq.Init.Logic "x = y" type_scope
+R2005 ring_sig "x1 * x2"
+R2001 ring_sig "- x"
+R2007 ring_sig "- x"
+R2015 ring_sig "x1 * x2"
+R1984 ring_sig RING.ring
+R2074 Coq.Init.Logic "x = y" type_scope
+R2076 ring_sig "- x"
+R2065 Coq.Init.Logic "x = y" type_scope
+R2061 ring_sig "- x"
+R2046 ring_sig RING.ring
+R2135 Coq.Init.Logic "x = y" type_scope
+R2125 ring_sig "x1 + x2"
+R2130 ring_sig "x1 + x2"
+R2139 ring_sig "x1 + x2"
+R2144 ring_sig "x1 + x2"
+R2106 ring_sig RING.ring
+R2182 Coq.Init.Logic "x = y :> A" type_scope
+R2178 ring_sig "- x"
+R2180 ring_sig "0"
+R2184 ring_sig "0"
+R2172 ring_sig RING.ring
+R2237 Coq.Init.Logic "x = y" type_scope
+R2233 eqtype "x '==' y" eq_scope
+R2230 ring_sig "- x"
+R2236 ring_sig "0"
+R2244 eqtype "x '==' y" eq_scope
+R2247 ring_sig "0"
+R2216 ring_sig RING.ring
+R2294 Coq.Init.Logic "x = y" type_scope
+R2290 ring_sig "x1 * x2"
+R2292 ring_sig "1"
+R2275 ring_sig RING.ring
+R2349 Coq.Init.Logic "x = y" type_scope
+R2345 ring_sig "x1 * x2"
+R2340 ring_sig "- x"
+R2342 ring_sig "1"
+R2351 ring_sig "- x"
+R2327 ring_sig RING.ring
+R2411 Coq.Init.Logic "x = y" type_scope
+R2405 ring_sig "x1 * x2"
+R2400 ring_sig "- x"
+R2402 ring_sig "1"
+R2407 ring_sig "- x"
+R2387 ring_sig RING.ring
+R2467 Coq.Init.Logic "x = y :> A" type_scope
+R2460 ring_sig "x1 * x2"
+R2455 ring_sig "- x"
+R2457 ring_sig "1"
+R2462 ring_sig "- x"
+R2464 ring_sig "1"
+R2469 ring_sig "1"
+R2448 ring_sig RING.ring
+R2529 Coq.Init.Logic "x = y" type_scope
+R2520 ring_sig "- x"
+R2524 ring_sig "x1 + x2"
+R2535 ring_sig "x - y"
+R2531 ring_sig "- x"
+R2503 ring_sig RING.ring
+R2603 Coq.Init.Logic "x = y" type_scope
+R2605 ring_sig "0"
+R2577 Coq.Init.Logic "x = y :> A" type_scope
+R2575 ring_sig "1"
+R2579 ring_sig "0"
+R2568 ring_sig RING.ring
+R2651 Coq.Init.Logic "x = y" type_scope
+R2647 ring_sig "x - y"
+R2649 ring_sig "0"
+R2632 ring_sig RING.ring
+R2699 Coq.Init.Logic "x = y" type_scope
+R2695 ring_sig "x - y"
+R2693 ring_sig "0"
+R2701 ring_sig "- x"
+R2680 ring_sig RING.ring
+R2760 Coq.Init.Logic "x = y" type_scope
+R2750 ring_sig "x1 * x2"
+R2755 ring_sig "x1 * x2"
+R2764 ring_sig "x1 * x2"
+R2769 ring_sig "x1 * x2"
+R2731 ring_sig RING.ring
+Fring_sig
+R357 Coq.Init.Logic "x = y" type_scope
+R417 Coq.Init.Logic "x = y" type_scope
+R471 Coq.Init.Logic "x = y" type_scope
+R511 Coq.Init.Logic "x = y" type_scope
+R554 Coq.Init.Logic "x = y" type_scope
+R614 Coq.Init.Logic "x = y" type_scope
+R667 Coq.Init.Logic "x = y" type_scope
+R719 Coq.Init.Logic "x = y" type_scope
+R797 Coq.Init.Logic "x = y" type_scope
+R854 ring_sig RING.add
+R889 ring_sig RING.mul
+R920 ring_sig RING.opp
+R945 ring_sig RING.zero
+R971 ring_sig RING.one
+R1002 ring_sig "x1 + x2"
+R1004 ring_sig RING.opp
+R1043 ring_sig "x1 + x2"
+R1081 ring_sig "x1 + x2"
+R1131 Coq.Init.Logic "x = y" type_scope
+R1127 ring_sig "x1 + x2"
+R1125 ring_sig "0"
+R1112 ring_sig RING.ring
+R1179 Coq.Init.Logic "x = y" type_scope
+R1174 ring_sig "x1 + x2"
+R1176 ring_sig "- x"
+R1181 ring_sig "0"
+R1159 ring_sig RING.ring
+R1225 funs injective
+R1212 ring_sig RING.ring
+R1286 funs injective
+R1273 ring_sig RING.ring
+R1344 funs cancel
+R1367 ring_sig "- x"
+R1331 ring_sig RING.ring
+R1412 funs cancel
+R1426 ring_sig "- x"
+R1399 ring_sig RING.ring
+R1479 funs cancel
+R1504 ring_sig "- x"
+R1466 ring_sig RING.ring
+R1549 funs cancel
+R1564 ring_sig "- x"
+R1536 ring_sig RING.ring
+R1626 Coq.Init.Logic "x = y" type_scope
+R1620 ring_sig "- x"
+R1622 ring_sig "- x"
+R1607 ring_sig RING.ring
+R1705 Coq.Init.Logic "x = y" type_scope
+R1696 Coq.Init.Logic "x = y" type_scope
+R1691 ring_sig "x1 + x2"
+R1698 ring_sig "0"
+R1682 Coq.Init.Logic "x = y" type_scope
+R1678 ring_sig "x1 + x2"
+R1684 ring_sig "0"
+R1658 ring_sig RING.ring
+R1767 Coq.Init.Logic "x = y" type_scope
+R1769 ring_sig "- x"
+R1758 Coq.Init.Logic "x = y" type_scope
+R1754 ring_sig "x1 + x2"
+R1760 ring_sig "0"
+R1737 ring_sig RING.ring
+R1817 Coq.Init.Logic "x = y" type_scope
+R1813 ring_sig "x1 * x2"
+R1811 ring_sig "0"
+R1819 ring_sig "0"
+R1798 ring_sig RING.ring
+R1865 Coq.Init.Logic "x = y" type_scope
+R1861 ring_sig "x1 * x2"
+R1863 ring_sig "0"
+R1867 ring_sig "0"
+R1846 ring_sig RING.ring
+R1920 Coq.Init.Logic "x = y" type_scope
+R1916 ring_sig "x1 * x2"
+R1912 ring_sig "- x"
+R1922 ring_sig "- x"
+R1927 ring_sig "x1 * x2"
+R1897 ring_sig RING.ring
+R1983 Coq.Init.Logic "x = y" type_scope
+R1977 ring_sig "x1 * x2"
+R1979 ring_sig "- x"
+R1985 ring_sig "- x"
+R1990 ring_sig "x1 * x2"
+R1960 ring_sig RING.ring
+R2053 Coq.Init.Logic "x = y" type_scope
+R2047 ring_sig "x1 * x2"
+R2043 ring_sig "- x"
+R2049 ring_sig "- x"
+R2057 ring_sig "x1 * x2"
+R2026 ring_sig RING.ring
+R2116 Coq.Init.Logic "x = y" type_scope
+R2118 ring_sig "- x"
+R2107 Coq.Init.Logic "x = y" type_scope
+R2103 ring_sig "- x"
+R2088 ring_sig RING.ring
+R2177 Coq.Init.Logic "x = y" type_scope
+R2167 ring_sig "x1 + x2"
+R2172 ring_sig "x1 + x2"
+R2181 ring_sig "x1 + x2"
+R2186 ring_sig "x1 + x2"
+R2148 ring_sig RING.ring
+R2224 Coq.Init.Logic "x = y :> A" type_scope
+R2220 ring_sig "- x"
+R2222 ring_sig "0"
+R2226 ring_sig "0"
+R2214 ring_sig RING.ring
+R2279 Coq.Init.Logic "x = y" type_scope
+R2275 eqtype "x '==' y" eq_scope
+R2272 ring_sig "- x"
+R2278 ring_sig "0"
+R2286 eqtype "x '==' y" eq_scope
+R2289 ring_sig "0"
+R2258 ring_sig RING.ring
+R2336 Coq.Init.Logic "x = y" type_scope
+R2332 ring_sig "x1 * x2"
+R2334 ring_sig "1"
+R2317 ring_sig RING.ring
+R2391 Coq.Init.Logic "x = y" type_scope
+R2387 ring_sig "x1 * x2"
+R2382 ring_sig "- x"
+R2384 ring_sig "1"
+R2393 ring_sig "- x"
+R2369 ring_sig RING.ring
+R2453 Coq.Init.Logic "x = y" type_scope
+R2447 ring_sig "x1 * x2"
+R2442 ring_sig "- x"
+R2444 ring_sig "1"
+R2449 ring_sig "- x"
+R2429 ring_sig RING.ring
+R2509 Coq.Init.Logic "x = y :> A" type_scope
+R2502 ring_sig "x1 * x2"
+R2497 ring_sig "- x"
+R2499 ring_sig "1"
+R2504 ring_sig "- x"
+R2506 ring_sig "1"
+R2511 ring_sig "1"
+R2490 ring_sig RING.ring
+R2571 Coq.Init.Logic "x = y" type_scope
+R2562 ring_sig "- x"
+R2566 ring_sig "x1 + x2"
+R2577 ring_sig "x - y"
+R2573 ring_sig "- x"
+R2545 ring_sig RING.ring
+R2645 Coq.Init.Logic "x = y" type_scope
+R2647 ring_sig "0"
+R2619 Coq.Init.Logic "x = y :> A" type_scope
+R2617 ring_sig "1"
+R2621 ring_sig "0"
+R2610 ring_sig RING.ring
+R2693 Coq.Init.Logic "x = y" type_scope
+R2689 ring_sig "x - y"
+R2691 ring_sig "0"
+R2674 ring_sig RING.ring
+R2741 Coq.Init.Logic "x = y" type_scope
+R2737 ring_sig "x - y"
+R2735 ring_sig "0"
+R2743 ring_sig "- x"
+R2722 ring_sig RING.ring
+R2802 Coq.Init.Logic "x = y" type_scope
+R2792 ring_sig "x1 * x2"
+R2797 ring_sig "x1 * x2"
+R2806 ring_sig "x1 * x2"
+R2811 ring_sig "x1 * x2"
+R2773 ring_sig RING.ring
+Fring
+R544 ring "x1 + x2"
+R636 Coq.Init.Logic "x = y" type_scope
+R631 ring "x1 + x2"
+R641 ring "x1 + x2"
+R692 Coq.Init.Logic "x = y" type_scope
+R680 ring "x1 + x2"
+R686 ring "x1 + x2"
+R702 ring "x1 + x2"
+R698 ring "x1 + x2"
+R741 Coq.Init.Logic "x = y" type_scope
+R737 ring "x1 + x2"
+R739 ring "0"
+R778 Coq.Init.Logic "x = y" type_scope
+R774 ring "x1 + x2"
+R770 ring "- x"
+R780 ring "0"
+R829 Coq.Init.Logic "x = y" type_scope
+R817 ring "x1 * x2"
+R823 ring "x1 * x2"
+R839 ring "x1 * x2"
+R834 ring "x1 * x2"
+R893 Coq.Init.Logic "x = y" type_scope
+R886 ring "x1 * x2"
+R882 ring "x1 + x2"
+R903 ring "x1 + x2"
+R898 ring "x1 * x2"
+R908 ring "x1 * x2"
+R962 Coq.Init.Logic "x = y" type_scope
+R950 ring "x1 * x2"
+R956 ring "x1 + x2"
+R972 ring "x1 + x2"
+R967 ring "x1 * x2"
+R977 ring "x1 * x2"
+R1016 Coq.Init.Logic "x = y" type_scope
+R1012 ring "x1 * x2"
+R1054 Coq.Init.Logic "x = y" type_scope
+R1048 ring "x1 * x2"
+R1095 Coq.Init.Logic "x = y" type_scope
+R1090 ring "x1 * x2"
+R1100 ring "x1 * x2"
+R1324 ring ring_axioms
+R1611 ssreflect "'nosimpl' t"
+R1619 ring Ring.add
+R1648 ssreflect "'nosimpl' t"
+R1656 ring Ring.opp
+R1685 ssreflect "'nosimpl' t"
+R1693 ring Ring.mul
+R1723 ssreflect "'nosimpl' t"
+R1731 ring Ring.zero
+R1761 ssreflect "'nosimpl' t"
+R1769 ring Ring.one
+R1886 ring Ring.ring
+R1935 ring addr
+R1984 ring mulr
+R2029 ring oppr
+R2068 ring zeror
+R2108 ring oner
+R2153 ring "x1 + x2" ring_scope
+R2155 ring oppr
+R2209 ring "x1 + x2" ring_scope
+R2247 ring "x1 * x2" ring_scope
+R2345 ring Ring.axioms
+R2393 Coq.Init.Logic "x = y" type_scope
+R2389 ring "x1 + x2" ring_scope
+R2386 ring "- x" ring_scope
+R2395 ring "0" ring_scope
+R2412 ring oppL'
+R2412 ring oppL'
+R2470 Coq.Init.Logic "x = y" type_scope
+R2466 ring "x1 + x2" ring_scope
+R2468 ring "0" ring_scope
+R2489 ring add0r'
+R2489 ring add0r'
+R2557 Coq.Init.Logic "x = y" type_scope
+R2547 ring "x1 * x2" ring_scope
+R2552 ring "x1 * x2" ring_scope
+R2565 ring "x1 * x2" ring_scope
+R2561 ring "x1 * x2" ring_scope
+R2585 ring mulA'
+R2585 ring mulA'
+R2660 Coq.Init.Logic "x = y" type_scope
+R2653 ring "x1 * x2" ring_scope
+R2649 ring "x1 + x2" ring_scope
+R2670 ring "x1 + x2" ring_scope
+R2666 ring "x1 * x2" ring_scope
+R2678 ring "x1 * x2" ring_scope
+R2700 ring distPM'
+R2700 ring distPM'
+R2777 Coq.Init.Logic "x = y" type_scope
+R2765 ring "x1 * x2" ring_scope
+R2771 ring "x1 + x2" ring_scope
+R2787 ring "x1 + x2" ring_scope
+R2783 ring "x1 * x2" ring_scope
+R2795 ring "x1 * x2" ring_scope
+R2816 ring distMP'
+R2816 ring distMP'
+R2877 Coq.Init.Logic "x = y" type_scope
+R2873 ring "x1 + x2" ring_scope
+R2881 ring "x1 + x2" ring_scope
+R2900 ring addC'
+R2900 ring addC'
+R2967 Coq.Init.Logic "x = y" type_scope
+R2957 ring "x1 + x2" ring_scope
+R2962 ring "x1 + x2" ring_scope
+R2975 ring "x1 + x2" ring_scope
+R2972 ring "x1 + x2" ring_scope
+R2997 ring addA'
+R2997 ring addA'
+R3055 Coq.Init.Logic "x = y" type_scope
+R3051 ring "x1 + x2" ring_scope
+R3049 ring "0" ring_scope
+R3085 ring Rings.addC
+R3098 ring Rings.addr0
+R3085 ring Rings.addC
+R3098 ring Rings.addr0
+R3145 Coq.Init.Logic "x = y" type_scope
+R3140 ring "x1 + x2" ring_scope
+R3142 ring "- x" ring_scope
+R3147 ring "0" ring_scope
+R3175 ring Rings.addC
+R3175 ring Rings.addC
+R3188 ring Rings.oppL
+R3188 ring Rings.oppL
+R3232 funs injective
+R3243 ring addr
+R3282 funs congr1
+R3290 ring addr
+R3296 ring "- x" ring_scope
+R3312 ring Rings.addA
+R3318 ring Rings.oppL
+R3324 ring Rings.add0r
+R3282 funs congr1
+R3290 ring addr
+R3296 ring "- x" ring_scope
+R3312 ring Rings.addA
+R3318 ring Rings.oppL
+R3324 ring Rings.add0r
+R3369 funs injective
+R3425 ring Rings.addC
+R3433 ring "x1 + x2" ring_scope
+R3437 ring Rings.addC
+R3450 ring Rings.addr_injl
+R3425 ring Rings.addC
+R3433 ring "x1 + x2" ring_scope
+R3437 ring Rings.addC
+R3450 ring Rings.addr_injl
+R3495 funs cancel
+R3512 ring addr
+R3518 ring "- x" ring_scope
+R3503 ring addr
+R3555 ring Rings.addA
+R3560 ring Rings.oppL
+R3565 ring Rings.add0r
+R3555 ring Rings.addA
+R3560 ring Rings.oppL
+R3565 ring Rings.add0r
+R3607 funs cancel
+R3628 ring addr
+R3615 ring addr
+R3621 ring "- x" ring_scope
+R3667 ring Rings.addA
+R3672 ring Rings.oppR
+R3677 ring Rings.add0r
+R3667 ring Rings.addA
+R3672 ring Rings.oppR
+R3677 ring Rings.add0r
+R3718 funs cancel
+R3743 ring "- x" ring_scope
+R3781 ring Rings.addA
+R3786 ring Rings.oppR
+R3791 ring Rings.addr0
+R3781 ring Rings.addA
+R3786 ring Rings.oppR
+R3791 ring Rings.addr0
+R3833 funs cancel
+R3848 ring "- x" ring_scope
+R3896 ring Rings.addA
+R3901 ring Rings.oppL
+R3906 ring Rings.addr0
+R3896 ring Rings.addA
+R3901 ring Rings.oppL
+R3906 ring Rings.addr0
+R3955 Coq.Init.Logic "x = y" type_scope
+R3949 ring "- x" ring_scope
+R3951 ring "- x" ring_scope
+R3989 ring Rings.addr_injr
+R4000 ring "- x" ring_scope
+R4015 ring Rings.oppL
+R4020 ring Rings.oppR
+R3989 ring Rings.addr_injr
+R4000 ring "- x" ring_scope
+R4015 ring Rings.oppL
+R4020 ring Rings.oppR
+R4097 Coq.Init.Logic "x = y" type_scope
+R4088 Coq.Init.Logic "x = y" type_scope
+R4083 ring "x1 + x2" ring_scope
+R4090 ring "0" ring_scope
+R4074 Coq.Init.Logic "x = y" type_scope
+R4070 ring "x1 + x2" ring_scope
+R4076 ring "0" ring_scope
+R4141 ring Rings.addr_injl
+R4141 ring Rings.addr_injl
+R4222 Coq.Init.Logic "x = y" type_scope
+R4224 ring "- x" ring_scope
+R4213 Coq.Init.Logic "x = y" type_scope
+R4209 ring "x1 + x2" ring_scope
+R4215 ring "0" ring_scope
+R4258 ring Rings.opp_uniq
+R4287 ring Rings.oppR
+R4258 ring Rings.opp_uniq
+R4287 ring Rings.oppR
+R4443 Coq.Init.Logic "x = y" type_scope
+R4439 ring "x1 * x2" ring_scope
+R4437 ring "0" ring_scope
+R4445 ring "0" ring_scope
+R4476 ring Rings.addr_injr
+R4489 ring "x1 * x2" ring_scope
+R4487 ring "0" ring_scope
+R4505 ring Rings.distPM
+R4513 ring Rings.add0r
+R4476 ring Rings.addr_injr
+R4489 ring "x1 * x2" ring_scope
+R4487 ring "0" ring_scope
+R4505 ring Rings.distPM
+R4513 ring Rings.add0r
+R4560 Coq.Init.Logic "x = y" type_scope
+R4556 ring "x1 * x2" ring_scope
+R4558 ring "0" ring_scope
+R4562 ring "0" ring_scope
+R4593 ring Rings.addr_injr
+R4606 ring "x1 * x2" ring_scope
+R4608 ring "0" ring_scope
+R4622 ring Rings.distMP
+R4630 ring Rings.add0r
+R4593 ring Rings.addr_injr
+R4606 ring "x1 * x2" ring_scope
+R4608 ring "0" ring_scope
+R4622 ring Rings.distMP
+R4630 ring Rings.add0r
+R4684 Coq.Init.Logic "x = y" type_scope
+R4680 ring "x1 * x2" ring_scope
+R4676 ring "- x" ring_scope
+R4686 ring "- x" ring_scope
+R4691 ring "x1 * x2" ring_scope
+R4727 ring Rings.opp_uniq
+R4739 ring "x1 * x2" ring_scope
+R4755 ring Rings.distPM
+R4762 ring Rings.oppR
+R4768 ring Rings.mul0r
+R4727 ring Rings.opp_uniq
+R4739 ring "x1 * x2" ring_scope
+R4755 ring Rings.distPM
+R4762 ring Rings.oppR
+R4768 ring Rings.mul0r
+R4755 ring Rings.distPM
+R4762 ring Rings.oppR
+R4768 ring Rings.mul0r
+R4825 Coq.Init.Logic "x = y" type_scope
+R4819 ring "x1 * x2" ring_scope
+R4821 ring "- x" ring_scope
+R4827 ring "- x" ring_scope
+R4832 ring "x1 * x2" ring_scope
+R4868 ring Rings.opp_uniq
+R4880 ring "x1 * x2" ring_scope
+R4897 ring Rings.distMP
+R4904 ring Rings.oppR
+R4910 ring Rings.mulr0
+R4868 ring Rings.opp_uniq
+R4880 ring "x1 * x2" ring_scope
+R4897 ring Rings.distMP
+R4904 ring Rings.oppR
+R4910 ring Rings.mulr0
+R4897 ring Rings.distMP
+R4904 ring Rings.oppR
+R4910 ring Rings.mulr0
+R4969 Coq.Init.Logic "x = y" type_scope
+R4963 ring "x1 * x2" ring_scope
+R4959 ring "- x" ring_scope
+R4965 ring "- x" ring_scope
+R4973 ring "x1 * x2" ring_scope
+R5008 ring Rings.mul_oppR
+R5017 ring Rings.mul_oppL
+R5026 ring Rings.opp_opp
+R5008 ring Rings.mul_oppR
+R5017 ring Rings.mul_oppL
+R5026 ring Rings.opp_opp
+R5086 Coq.Init.Logic "x = y" type_scope
+R5088 ring "- x" ring_scope
+R5077 Coq.Init.Logic "x = y" type_scope
+R5073 ring "- x" ring_scope
+R5146 ring Rings.opp_opp
+R5146 ring Rings.opp_opp
+R5206 Coq.Init.Logic "x = y" type_scope
+R5196 ring "x1 + x2" ring_scope
+R5201 ring "x1 + x2" ring_scope
+R5210 ring "x1 + x2" ring_scope
+R5215 ring "x1 + x2" ring_scope
+R5253 ring Rings.addA
+R5261 ring "x1 + x2" ring_scope
+R5265 ring Rings.addC
+R5270 ring Rings.addA
+R5253 ring Rings.addA
+R5261 ring "x1 + x2" ring_scope
+R5265 ring Rings.addC
+R5270 ring Rings.addA
+R5299 Coq.Init.Logic "x = y :> A" type_scope
+R5295 ring "- x" ring_scope
+R5297 ring "0" ring_scope
+R5301 ring "0" ring_scope
+R5327 ring Rings.addr_injr
+R5337 ring "0" ring_scope
+R5349 ring Rings.oppL
+R5355 ring Rings.addr0
+R5327 ring Rings.addr_injr
+R5337 ring "0" ring_scope
+R5349 ring Rings.oppL
+R5355 ring Rings.addr0
+R5404 Coq.Init.Logic "x = y" type_scope
+R5400 eqtype "x '==' y" eq_scope
+R5397 ring "- x" ring_scope
+R5403 ring "0" ring_scope
+R5411 eqtype "x '==' y" eq_scope
+R5414 ring "0" ring_scope
+R5455 eqtype eqP
+R5455 eqtype eqP
+R5472 eqtype "x '==' y" eq_scope
+R5506 eqtype eqP
+R5513 ring Rings.opp0
+R5472 eqtype "x '==' y" eq_scope
+R5506 eqtype eqP
+R5513 ring Rings.opp0
+R5526 funs congr1
+R5535 ring oppr
+R5526 funs congr1
+R5535 ring oppr
+R5555 ring Rings.opp_opp
+R5563 ring Rings.opp0
+R5555 ring Rings.opp_opp
+R5563 ring Rings.opp0
+R5589 eqtype eq_refl
+R5589 eqtype eq_refl
+R5656 Coq.Init.Logic "x = y" type_scope
+R5652 ring "x1 * x2" ring_scope
+R5650 ring "1" ring_scope
+R5676 ring mul1r'
+R5676 ring mul1r'
+R5735 Coq.Init.Logic "x = y" type_scope
+R5731 ring "x1 * x2" ring_scope
+R5733 ring "1" ring_scope
+R5754 ring mulr1'
+R5754 ring mulr1'
+R5931 Coq.Init.Logic "x = y" type_scope
+R5927 ring "x1 * x2" ring_scope
+R5922 ring "- x" ring_scope
+R5924 ring "1" ring_scope
+R5933 ring "- x" ring_scope
+R5966 ring Rings.addr_injl
+R5988 ring Rings.oppR
+R5993 ring Rings.mul_oppL
+R6002 ring Rings.mul1r
+R6008 ring Rings.oppR
+R5966 ring Rings.addr_injl
+R5988 ring Rings.oppR
+R5993 ring Rings.mul_oppL
+R6002 ring Rings.mul1r
+R6008 ring Rings.oppR
+R6178 Coq.Init.Logic "x = y" type_scope
+R6172 ring "x1 * x2" ring_scope
+R6167 ring "- x" ring_scope
+R6169 ring "1" ring_scope
+R6174 ring "- x" ring_scope
+R6211 ring Rings.mul_opp1r
+R6221 ring Rings.opp_opp
+R6211 ring Rings.mul_opp1r
+R6221 ring Rings.opp_opp
+R6270 Coq.Init.Logic "x = y :> A" type_scope
+R6263 ring "x1 * x2" ring_scope
+R6258 ring "- x" ring_scope
+R6260 ring "1" ring_scope
+R6265 ring "- x" ring_scope
+R6267 ring "1" ring_scope
+R6272 ring "1" ring_scope
+R6295 ring Rings.mul_opp1_opp
+R6295 ring Rings.mul_opp1_opp
+R6356 Coq.Init.Logic "x = y" type_scope
+R6347 ring "- x" ring_scope
+R6351 ring "x1 + x2" ring_scope
+R6362 ring "x - y" ring_scope
+R6358 ring "- x" ring_scope
+R6398 ring Rings.mul_opp1r
+R6408 ring Rings.distMP
+R6416 ring Rings.mul_opp1r
+R6398 ring Rings.mul_opp1r
+R6408 ring Rings.distMP
+R6416 ring Rings.mul_opp1r
+R6480 Coq.Init.Logic "x = y" type_scope
+R6482 ring "0" ring_scope
+R6455 Coq.Init.Logic "x = y" type_scope
+R6452 ring "1" ring_scope
+R6459 ring "0" ring_scope
+R6519 ring Rings.mul1r
+R6527 ring Rings.mul0r
+R6519 ring Rings.mul1r
+R6527 ring Rings.mul0r
+R6574 Coq.Init.Logic "x = y" type_scope
+R6570 ring "x - y" ring_scope
+R6572 ring "0" ring_scope
+R6597 ring Rings.opp0
+R6610 ring Rings.addr0
+R6597 ring Rings.opp0
+R6610 ring Rings.addr0
+R6657 Coq.Init.Logic "x = y" type_scope
+R6653 ring "x - y" ring_scope
+R6651 ring "0" ring_scope
+R6659 ring "- x" ring_scope
+R6692 ring Rings.add0r
+R6692 ring Rings.add0r
+R6740 Coq.Init.Logic "x = y" type_scope
+R6736 ring "x1 * x2" ring_scope
+R6744 ring "x1 * x2" ring_scope
+R6763 ring mulC'
+R6763 ring mulC'
+R6832 Coq.Init.Logic "x = y" type_scope
+R6822 ring "x1 * x2" ring_scope
+R6827 ring "x1 * x2" ring_scope
+R6836 ring "x1 * x2" ring_scope
+R6841 ring "x1 * x2" ring_scope
+R6879 ring Rings.mulA
+R6887 ring "x1 * x2" ring_scope
+R6891 ring Rings.mulC
+R6896 ring Rings.mulA
+R6879 ring Rings.mulA
+R6887 ring "x1 * x2" ring_scope
+R6891 ring Rings.mulC
+R6896 ring Rings.mulA
+R6935 Coq.Init.Logic "'exists' x : t , p" type_scope
+R6957 Coq.Init.Logic "x = y" type_scope
+R6952 ring "x1 * x2" ring_scope
+R6985 ring Rings.rdivides
+R7044 ring "x |` y"
+R7047 ring "0" ring_scope
+R7065 ring "0" ring_scope
+R7078 ring Rings.mulr0
+R7065 ring "0" ring_scope
+R7078 ring Rings.mulr0
+R7120 ring "x |` y"
+R7118 ring "1" ring_scope
+R7164 ring Rings.mul1r
+R7164 ring Rings.mul1r
+R7210 ring "x |` y"
+R7244 ring "1" ring_scope
+R7260 ring Rings.mulr1
+R7244 ring "1" ring_scope
+R7260 ring Rings.mulr1
+R7329 ring "x |` y"
+R7334 ring "x1 + x2" ring_scope
+R7319 ring "x |` y"
+R7309 ring "x |` y"
+R7398 ring Rings.distMP
+R7398 ring Rings.distMP
+R7420 ring "x1 + x2" ring_scope
+R7420 ring "x1 + x2" ring_scope
+R7492 ring "x |` y"
+R7497 ring "x1 * x2" ring_scope
+R7482 ring "x |` y"
+R7545 ring "x1 * x2" ring_scope
+R7559 ring Rings.mulA
+R7545 ring "x1 * x2" ring_scope
+R7559 ring Rings.mulA
+R7629 ring "x |` y"
+R7619 ring "x |` y"
+R7609 ring "x |` y"
+R7684 ring Rings.mulA
+R7701 ring "x1 * x2" ring_scope
+R7684 ring Rings.mulA
+R7701 ring "x1 * x2" ring_scope
+R7761 ring "x |` y"
+R7766 ring "x1 * x2" ring_scope
+R7751 ring "x |` y"
+R7813 ring "x1 * x2" ring_scope
+R7828 ring Rings.mulC
+R7834 ring Rings.mulA
+R7843 ring "x1 * x2" ring_scope
+R7847 ring Rings.mulC
+R7813 ring "x1 * x2" ring_scope
+R7828 ring Rings.mulC
+R7834 ring Rings.mulA
+R7843 ring "x1 * x2" ring_scope
+R7847 ring Rings.mulC
+R7920 ring "x |` y"
+R7910 ring "x |` y"
+R7896 ring "x |` y"
+R7901 ring "x1 + x2" ring_scope
+R8002 funs canLR
+R8012 ring Rings.addKr
+R8021 ring "x1 * x2" ring_scope
+R8002 funs canLR
+R8012 ring Rings.addKr
+R8021 ring "x1 * x2" ring_scope
+R8039 ring Rings.mul_oppR
+R8049 ring Rings.distMP
+R8039 ring Rings.mul_oppR
+R8049 ring Rings.distMP
+R8073 ring "x1 + x2" ring_scope
+R8068 ring "- x" ring_scope
+R8073 ring "x1 + x2" ring_scope
+R8068 ring "- x" ring_scope
+R8237 ring "x |` y"
+R8224 ring "x |` y"
+R8211 ring "x |` y"
+R8178 ring "x |` y"
+R8166 ring "x |` y"
+R8286 Coq.Init.Logic "'exists' x , p" type_scope
+R8305 Coq.Init.Logic "x = y" type_scope
+R8300 ring "x1 * x2" ring_scope
+R8307 ring "1" ring_scope
+R8364 Coq.Init.Logic "x <> y" type_scope
+R8368 ring "0" ring_scope
+R8352 ring Rings.unit
+R8332 Coq.Init.Logic "x <> y" type_scope
+R8329 ring "1" ring_scope
+R8337 ring "0" ring_scope
+R8419 ring Rings.mul0r
+R8419 ring Rings.mul0r
+R8484 Coq.Init.Logic "'exists' x : t , p" type_scope
+R8505 Coq.Init.Logic "A /\ B" type_scope
+R8498 ring Rings.unit
+R8510 Coq.Init.Logic "x = y" type_scope
+R8514 ring "x1 * x2" ring_scope
+R8589 Coq.Init.Logic "A \/ B" type_scope
+R8582 ring Rings.unit
+R8592 ring Rings.unit
+R8574 Coq.Init.Logic "x = y" type_scope
+R8570 ring "x1 * x2" ring_scope
+R8641 Coq.Init.Logic "A /\ B" type_scope
+R8630 Coq.Init.Logic "~ x" type_scope
+R8633 ring Rings.unit
+R8644 ring Rings.irreducible
+R8715 ring Rings.unit
+R8702 ring Rings.gcd
+R8750 Coq.Init.Datatypes nat
+R8784 Coq.Init.Datatypes S
+R8796 ring "x1 * x2" ring_scope
+R8812 ring "1" ring_scope
+R8750 Coq.Init.Datatypes nat
+R8835 Coq.Init.Datatypes nat
+R8877 Coq.Init.Datatypes S
+R8889 ring "x1 + x2" ring_scope
+R8906 ring "1" ring_scope
+R8835 Coq.Init.Datatypes nat
+R8932 seq seq
+R8932 seq seq
+R8985 seq Seq0
+R8991 seq Seq0
+R8999 ring "1" ring_scope
+R9009 seq Adds
+R9021 seq Adds
+R9043 ring "x1 + x2" ring_scope
+R9038 ring "x1 * x2" ring_scope
+R9069 ring "0" ring_scope
+R8932 seq seq
+R8932 seq seq
+R9141 Coq.Init.Logic "A \/ B" type_scope
+R9137 Coq.Init.Logic "x = y" type_scope
+R9139 ring "0" ring_scope
+R9147 Coq.Init.Logic "x = y" type_scope
+R9149 ring "0" ring_scope
+R9127 Coq.Init.Logic "x = y" type_scope
+R9122 ring "x1 * x2" ring_scope
+R9129 ring "0" ring_scope
+R9332 Coq.Init.Logic "A <-> B" type_scope
+R9329 Coq.Init.Logic "x = y" type_scope
+R9316 Coq.Init.Logic "x = y" type_scope
+R9312 ring "x1 * x2" ring_scope
+R9320 ring "x1 * x2" ring_scope
+R9302 eqtype "x '!=' y" eq_scope
+R9305 ring "0" ring_scope
+R9338 ring Rings.domainP
+R9409 eqtype "x '==' y" eq_scope
+R9412 ring "0" ring_scope
+R9409 eqtype "x '==' y" eq_scope
+R9412 ring "0" ring_scope
+R9433 eqtype eqP
+R9433 eqtype eqP
+R9454 ssrbool negbT
+R9454 ssrbool negbT
+R9481 ring "0" ring_scope
+R9481 ring "0" ring_scope
+R9507 ring Rings.mulr0
+R9507 ring Rings.mulr0
+R9554 Coq.Init.Logic "x = y" type_scope
+R9544 ring "x1 * x2" ring_scope
+R9549 ring "x - y" ring_scope
+R9556 ring "0" ring_scope
+R9569 ring Rings.distMP
+R9576 ring Rings.mul_oppR
+R9588 ring Rings.oppR
+R9554 Coq.Init.Logic "x = y" type_scope
+R9544 ring "x1 * x2" ring_scope
+R9549 ring "x - y" ring_scope
+R9556 ring "0" ring_scope
+R9569 ring Rings.distMP
+R9576 ring Rings.mul_oppR
+R9588 ring Rings.oppR
+R9624 eqtype eqP
+R9624 eqtype eqP
+R9651 ring Rings.addr_injr
+R9662 ring "- x" ring_scope
+R9651 ring Rings.addr_injr
+R9662 ring "- x" ring_scope
+R9682 ring Rings.oppR
+R9682 ring Rings.oppR
+R9905 Coq.Init.Logic "x = y" type_scope
+R9901 ring "x1 * x2" ring_scope
+R9907 ring "1" ring_scope
+R9888 Coq.Init.Logic "x = y" type_scope
+R9892 ring "x1 * x2" ring_scope
+R9875 Coq.Init.Logic "x = y" type_scope
+R9879 ring "x1 * x2" ring_scope
+R9865 Coq.Init.Logic "x <> y" type_scope
+R9868 ring "0" ring_scope
+R9832 ring Rings.domainP
+R9982 ring Rings.mulA
+R9993 ring Rings.mul1r
+R9982 ring Rings.mulA
+R9993 ring Rings.mul1r
+R10022 constructive_lib comb
+R10035 ring "- x" ring_scope
+R10040 ring "x1 * x2" ring_scope
+R10038 ring "1" ring_scope
+R10022 constructive_lib comb
+R10035 ring "- x" ring_scope
+R10040 ring "x1 * x2" ring_scope
+R10038 ring "1" ring_scope
+R10061 ring Rings.oppR
+R10067 ring Rings.mul_oppL
+R10077 ring Rings.distPM
+R10061 ring Rings.oppR
+R10067 ring Rings.mul_oppL
+R10077 ring Rings.distPM
+R10107 Coq.Init.Logic sym_eq
+R10107 Coq.Init.Logic sym_eq
+R10147 constructive_lib comb
+R10159 ring "1" ring_scope
+R10147 constructive_lib comb
+R10159 ring "1" ring_scope
+R10176 ring Rings.addA
+R10181 ring Rings.oppL
+R10186 ring Rings.addr0
+R10192 ring Rings.add0r
+R10176 ring Rings.addA
+R10181 ring Rings.oppL
+R10186 ring Rings.addr0
+R10192 ring Rings.add0r
+R10250 ring rdivides
+R10313 ring pow
+R-1 ring unit
+R-1 ring unit
+R-1 ring unit
+R10690 ring domainP
+R10738 ring domain
+R10789 funs injective
+R10800 ring mulr
+R10781 Coq.Init.Logic "x <> y" type_scope
+R10784 ring "0" ring_scope
+R10858 ring add0r
+R10867 ring "x1 * x2" ring_scope
+R10858 ring add0r
+R10867 ring "x1 * x2" ring_scope
+R10896 funs canLR
+R10905 ring addrK
+R10896 funs canLR
+R10905 ring addrK
+R10931 ring mul_oppR
+R10941 ring distMP
+R10931 ring mul_oppR
+R10941 ring distMP
+R10954 ring integ
+R10954 ring integ
+R10986 funs canRL
+R10995 ring addrKV
+R10986 funs canRL
+R10995 ring addrKV
+R11018 ring add0r
+R11018 ring add0r
+R11110 Coq.Init.Logic "x = y" type_scope
+R11095 Coq.Init.Logic "x = y" type_scope
+R11091 ring "x1 * x2" ring_scope
+R11099 ring "x1 * x2" ring_scope
+R11080 Coq.Init.Logic "x <> y" type_scope
+R11083 ring "0" ring_scope
+R11153 ring Domain.mulr_injl
+R11176 ring mulC
+R11183 ring mulC
+R11153 ring Domain.mulr_injl
+R11176 ring mulC
+R11183 ring mulC
+R11270 ring associates
+R11262 ring "x |` y" ring_scope
+R11252 ring "x |` y" ring_scope
+R11347 eqtype "x '==' y" eq_scope
+R11350 ring "0" ring_scope
+R11359 eqtype eqP
+R11347 eqtype "x '==' y" eq_scope
+R11350 ring "0" ring_scope
+R11359 eqtype eqP
+R11359 eqtype eqP
+R11389 Coq.Init.Logic "x = y" type_scope
+R11391 ring "0" ring_scope
+R11418 ring mul0r
+R11389 Coq.Init.Logic "x = y" type_scope
+R11391 ring "0" ring_scope
+R11418 ring mul0r
+R11442 ring "1" ring_scope
+R11472 ring "1" ring_scope
+R11486 ring mulr1
+R11442 ring "1" ring_scope
+R11472 ring "1" ring_scope
+R11486 ring mulr1
+R11512 ring mulr0
+R11512 ring mulr0
+R11583 ring mulC
+R11583 ring mulC
+R11599 ring Domain.mulr_injl
+R11599 ring Domain.mulr_injl
+R11627 ring mulA
+R11632 ring mulr1
+R11627 ring mulA
+R11632 ring mulr1
+R11655 ring mulC
+R11655 ring mulC
+R11769 ring domain
+R11852 Coq.Init.Logic "x = y" type_scope
+R11848 ring "x1 * x2" ring_scope
+R11854 ring "1" ring_scope
+R11834 Coq.Init.Logic "x <> y" type_scope
+R11837 ring "0" ring_scope
+R11867 Coq.Init.Logic "x <> y  :> T" type_scope
+R11865 ring "1" ring_scope
+R11870 ring "0" ring_scope
+R11897 Coq.Init.Logic "x = y" type_scope
+R11895 ring "0" ring_scope
+R11899 ring "0" ring_scope
+R11935 ring Field.field
+R12025 ssreflect "'nosimpl' t"
+R12033 ring Field.inv
+R12068 ring invf
+R12234 constructive_lib nati
+R12299 constructive_lib "x < y" nati_scope
+R12278 Coq.Init.Logic "x = y" type_scope
+R12286 ring "x1 + x2" ring_scope
+R12282 ring "x1 * x2" ring_scope
+R12379 ring domain
+R12404 constructive_lib nati
+R12446 Coq.Init.Logic "x = y" type_scope
+R12448 ring "0" ring_scope
+R12435 Coq.Init.Logic "x = y" type_scope
+R12437 constructive_lib "-oo" nati_scope
+R12486 Coq.Init.Logic "x = y" type_scope
+R12488 constructive_lib "-oo" nati_scope
+R12473 Coq.Init.Logic "x = y" type_scope
+R12475 ring "0" ring_scope
+R12532 constructive_lib "x <= y" nati_scope
+R12542 ring "x1 * x2" ring_scope
+R12518 Coq.Init.Logic "x <> y" type_scope
+R12521 ring "0" ring_scope
+R12579 ring div_res
+R12571 Coq.Init.Logic "x <> y" type_scope
+R12574 ring "0" ring_scope
+R12655 Coq.Init.Logic "x = y :> A" type_scope
+R12651 ring "x '^-1'" ring_scope
+R12650 ring "0" ring_scope
+R12657 ring "0" ring_scope
+R12679 ring Field.inv0
+R12679 ring Field.inv0
+R12743 Coq.Init.Logic "x = y" type_scope
+R12739 ring "x1 * x2" ring_scope
+R12735 ring "x '^-1'" ring_scope
+R12745 ring "1" ring_scope
+R12726 Coq.Init.Logic "x <> y" type_scope
+R12729 ring "0" ring_scope
+R12762 ring Field.unitPL
+R12762 ring Field.unitPL
+R12820 funs cancel
+R12837 ring mulr
+R12843 ring "x '^-1'" ring_scope
+R12828 ring mulr
+R12812 Coq.Init.Logic "x <> y" type_scope
+R12815 ring "0" ring_scope
+R12882 ring mulA
+R12888 ring Fields.invL
+R12897 ring mul1r
+R12882 ring mulA
+R12888 ring Fields.invL
+R12897 ring mul1r
+R12956 Coq.Init.Logic "x = y" type_scope
+R12949 ring "x1 * x2" ring_scope
+R12952 ring "x '^-1'" ring_scope
+R12958 ring "1" ring_scope
+R12939 Coq.Init.Logic "x <> y" type_scope
+R12942 ring "0" ring_scope
+R12986 ring mulC
+R12999 ring Fields.invL
+R12986 ring mulC
+R12999 ring Fields.invL
+R13049 funs cancel
+R13074 ring "x '^-1'" ring_scope
+R13041 Coq.Init.Logic "x <> y" type_scope
+R13044 ring "0" ring_scope
+R13114 ring mulA
+R13120 ring Fields.invR
+R13129 ring mulr1
+R13114 ring mulA
+R13120 ring Fields.invR
+R13129 ring mulr1
+R13181 funs cancel
+R13201 ring mulr
+R13189 ring mulr
+R13195 ring "x '^-1'" ring_scope
+R13173 Coq.Init.Logic "x <> y" type_scope
+R13176 ring "0" ring_scope
+R13243 ring mulA
+R13249 ring Fields.invR
+R13258 ring mul1r
+R13243 ring mulA
+R13249 ring Fields.invR
+R13258 ring mul1r
+R13310 funs cancel
+R13325 ring "x '^-1'" ring_scope
+R13302 Coq.Init.Logic "x <> y" type_scope
+R13305 ring "0" ring_scope
+R13375 ring mulA
+R13381 ring Fields.invL
+R13390 ring mulr1
+R13375 ring mulA
+R13381 ring Fields.invL
+R13390 ring mulr1
+R13461 Coq.Init.Logic "x = y" type_scope
+R13464 ring "x '^-1'" ring_scope
+R13452 Coq.Init.Logic "x = y" type_scope
+R13448 ring "x1 * x2" ring_scope
+R13454 ring "1" ring_scope
+R13438 Coq.Init.Logic "x <> y" type_scope
+R13441 ring "0" ring_scope
+R13508 funs congr1
+R13530 ring "x1 * x2" ring_scope
+R13526 ring "x '^-1'" ring_scope
+R13508 funs congr1
+R13530 ring "x1 * x2" ring_scope
+R13526 ring "x '^-1'" ring_scope
+R13548 ring mulA
+R13553 ring Fields.invL
+R13561 ring mul1r
+R13567 ring mulr1
+R13548 ring mulA
+R13553 ring Fields.invL
+R13561 ring mul1r
+R13567 ring mulr1
+R13649 Coq.Init.Logic "x = y" type_scope
+R13652 ring "x '^-1'" ring_scope
+R13640 Coq.Init.Logic "x = y" type_scope
+R13636 ring "x1 * x2" ring_scope
+R13642 ring "1" ring_scope
+R13626 Coq.Init.Logic "x <> y" type_scope
+R13629 ring "0" ring_scope
+R13685 ring mulC
+R13698 ring Fields.inv_injR
+R13685 ring mulC
+R13698 ring Fields.inv_injR
+R13728 Coq.Init.Logic "x <> y  :> T" type_scope
+R13726 ring "1" ring_scope
+R13731 ring "0" ring_scope
+R13753 ring Field.nzP
+R13753 ring Field.nzP
+R13790 eqtype "x '!=' y ':>' d" eq_scope
+R13785 ring "- x" ring_scope
+R13787 ring "1" ring_scope
+R13793 ring "0" ring_scope
+R13826 eqtype eqP
+R13826 eqtype eqP
+R13837 funs congr1
+R13856 ring "x1 * x2" ring_scope
+R13858 ring "- x" ring_scope
+R13860 ring "1" ring_scope
+R13837 funs congr1
+R13856 ring "x1 * x2" ring_scope
+R13858 ring "- x" ring_scope
+R13860 ring "1" ring_scope
+R13874 ring mul_opp1_opp1
+R13888 ring mul0r
+R13874 ring mul_opp1_opp1
+R13888 ring mul0r
+R13902 ring Fields.nzP
+R13902 ring Fields.nzP
+R13942 Coq.Init.Logic "x = y :> A" type_scope
+R13938 ring "x '^-1'" ring_scope
+R13937 ring "1" ring_scope
+R13944 ring "1" ring_scope
+R13976 ring Fields.inv_injL
+R13999 ring Fields.nzP
+R14015 ring mulr1
+R13976 ring Fields.inv_injL
+R13999 ring Fields.nzP
+R14015 ring mulr1
+R14077 Coq.Init.Logic "x = y" type_scope
+R14072 ring "x '^-1'" ring_scope
+R14069 ring "- x" ring_scope
+R14079 ring "- x" ring_scope
+R14083 ring "x '^-1'" ring_scope
+R14060 Coq.Init.Logic "x <> y" type_scope
+R14063 ring "0" ring_scope
+R14137 ring Fields.inv_injR
+R14137 ring Fields.inv_injR
+R14174 ring opp_opp
+R14187 ring opp0
+R14174 ring opp_opp
+R14187 ring opp0
+R14210 ring mul_opp_opp
+R14222 ring Fields.invR
+R14210 ring mul_opp_opp
+R14222 ring Fields.invR
+R14325 Coq.Init.Logic "x = y" type_scope
+R14317 ring "x1 + x2" ring_scope
+R14313 ring "x '^-1'" ring_scope
+R14321 ring "x '^-1'" ring_scope
+R14327 ring "0" ring_scope
+R14304 Coq.Init.Logic "x = y" type_scope
+R14300 ring "x1 + x2" ring_scope
+R14306 ring "0" ring_scope
+R14290 Coq.Init.Logic "x <> y" type_scope
+R14293 ring "0" ring_scope
+R14280 Coq.Init.Logic "x <> y" type_scope
+R14283 ring "0" ring_scope
+R14376 funs congr1
+R14397 ring "x1 + x2" ring_scope
+R14393 ring "- x" ring_scope
+R14376 funs congr1
+R14397 ring "x1 + x2" ring_scope
+R14393 ring "- x" ring_scope
+R14417 ring addA
+R14422 ring oppL
+R14427 ring addr0
+R14433 ring add0r
+R14417 ring addA
+R14422 ring oppL
+R14427 ring addr0
+R14433 ring add0r
+R14454 ring Fields.opp_inv
+R14454 ring Fields.opp_inv
+R14480 ring oppR
+R14480 ring oppR
+R14622 eqtype set
+R14646 ring "0" ring_scope
+R14665 ring "1" ring_scope
+R14727 ring "x1 + x2" ring_scope
+R14792 ring "x1 * x2" ring_scope
+R14841 ring "- x" ring_scope
+R14917 Coq.Init.Logic "x = y" type_scope
+R14901 Coq.Init.Logic "x = y" type_scope
+R14892 ring Sub_ring.srbase
+R14903 ring Sub_ring.srbase
+R14883 ring Sub_ring.subring
+R14883 ring Sub_ring.subring
+R15042 ring Sub_ring.Subring
+R15042 ring Sub_ring.Subring
+R15062 Coq.Logic.ProofIrrelevance proof_irrelevance
+R15042 ring Sub_ring.Subring
+R15062 Coq.Logic.ProofIrrelevance proof_irrelevance
+R15062 Coq.Logic.ProofIrrelevance proof_irrelevance
+R15062 Coq.Logic.ProofIrrelevance proof_irrelevance
+R15062 Coq.Logic.ProofIrrelevance proof_irrelevance
+R15062 Coq.Logic.ProofIrrelevance proof_irrelevance
+R15127 ring Sub_ring.subring
+R15157 Coq.Init.Datatypes true
+R15157 Coq.Init.Datatypes true
+R15194 ring Sub_ring.subring
+R15221 eqtype sub_eqType
+R15311 ring "x1 + x2" ring_scope
+R15311 ring "x1 + x2" ring_scope
+R15337 ring Sub_ring.addP
+R15350 eqtype valP
+R15337 ring Sub_ring.addP
+R15350 eqtype valP
+R15350 eqtype valP
+R15452 ring "x1 * x2" ring_scope
+R15452 ring "x1 * x2" ring_scope
+R15478 ring Sub_ring.mulP
+R15491 eqtype valP
+R15478 ring Sub_ring.mulP
+R15491 eqtype valP
+R15491 eqtype valP
+R15578 ring "- x" ring_scope
+R15578 ring "- x" ring_scope
+R15604 ring Sub_ring.oppP
+R15617 eqtype valP
+R15604 ring Sub_ring.oppP
+R15617 eqtype valP
+R15665 eqtype EqSig
+R15677 ring Sub_ring.zeroP
+R15673 ring "0" ring_scope
+R15707 eqtype EqSig
+R15719 ring Sub_ring.oneP
+R15715 ring "1" ring_scope
+R15752 ring ring_axioms
+R15785 ring Sub_ring.sone
+R15779 ring Sub_ring.szero
+R15774 ring Sub_ring.sopp
+R15769 ring Sub_ring.smul
+R15764 ring Sub_ring.sadd
+R15836 eqtype val_inj
+R15859 ring addC
+R15874 ring addA
+R15889 ring addr0
+R15905 ring oppL
+R15920 ring mulA
+R15935 ring distPM
+R15952 ring distMP
+R15969 ring mul1r
+R15985 ring mulr1
+R16001 ring mulC
+R15836 eqtype val_inj
+R15836 eqtype val_inj
+R15836 eqtype val_inj
+R15836 eqtype val_inj
+R15836 eqtype val_inj
+R15836 eqtype val_inj
+R15836 eqtype val_inj
+R15836 eqtype val_inj
+R15836 eqtype val_inj
+R15836 eqtype val_inj
+R15859 ring addC
+R15874 ring addA
+R15889 ring addr0
+R15905 ring oppL
+R15920 ring mulA
+R15935 ring distPM
+R15952 ring distMP
+R15969 ring mul1r
+R15985 ring mulr1
+R16001 ring mulC
+R16056 ring Ring.Ring
+R16066 ring Sub_ring.subring_axioms
+R16128 ring "x1 + x2" ring_scope
+R16185 ring Sub_ring.oppP
+R16185 ring Sub_ring.oppP
+R16209 ring Sub_ring.addP
+R16209 ring Sub_ring.addP
+R16235 ring addA
+R16240 ring oppL
+R16245 ring add0r
+R16235 ring addA
+R16240 ring oppL
+R16245 ring add0r
+R16314 ring "x1 + x2" ring_scope
+R16360 ring addC
+R16373 ring Sub_ring.subring_addl
+R16360 ring addC
+R16373 ring Sub_ring.subring_addl
+R16412 ring "- x" ring_scope
+R16415 ring "1" ring_scope
+R16436 ring Sub_ring.oppP
+R16436 ring Sub_ring.oppP
+R16449 ring Sub_ring.oneP
+R16449 ring Sub_ring.oneP
+R16572 ring domain
+R16593 ring subring
+R16636 ring domain
+R16664 ring subring_to_ring
+R16664 ring subring_to_ring
+R16727 ring integ
+R16765 eqtype val_inj
+R16794 eqtype val_inj
+R16727 ring integ
+R16765 eqtype val_inj
+R16794 eqtype val_inj
+R16953 ring subring
+R17007 ring invf
+R17088 Coq.Init.Logic "x = y" type_scope
+R17072 Coq.Init.Logic "x = y" type_scope
+R17063 ring srbase
+R17074 ring srbase
+R17053 ring Sub_field.subfield
+R17053 ring Sub_field.subfield
+R17226 Coq.Init.Logic "x = y" type_scope
+R17241 Coq.Logic.ProofIrrelevance proof_irrelevance
+R17226 Coq.Init.Logic "x = y" type_scope
+R17241 Coq.Logic.ProofIrrelevance proof_irrelevance
+R17273 Coq.Init.Logic "x = y" type_scope
+R17288 Coq.Logic.ProofIrrelevance proof_irrelevance
+R17273 Coq.Init.Logic "x = y" type_scope
+R17288 Coq.Logic.ProofIrrelevance proof_irrelevance
+R17320 Coq.Init.Logic "x = y" type_scope
+R17335 Coq.Logic.ProofIrrelevance proof_irrelevance
+R17320 Coq.Init.Logic "x = y" type_scope
+R17335 Coq.Logic.ProofIrrelevance proof_irrelevance
+R17367 Coq.Init.Logic "x = y" type_scope
+R17382 Coq.Logic.ProofIrrelevance proof_irrelevance
+R17367 Coq.Init.Logic "x = y" type_scope
+R17382 Coq.Logic.ProofIrrelevance proof_irrelevance
+R17414 Coq.Init.Logic "x = y" type_scope
+R17429 Coq.Logic.ProofIrrelevance proof_irrelevance
+R17414 Coq.Init.Logic "x = y" type_scope
+R17429 Coq.Logic.ProofIrrelevance proof_irrelevance
+R17454 ring Sub_field.Subfield
+R17454 ring Sub_field.Subfield
+R17454 ring Sub_field.Subfield
+R17474 Coq.Logic.ProofIrrelevance proof_irrelevance
+R17474 Coq.Logic.ProofIrrelevance proof_irrelevance
+R17541 ring Sub_field.subfield
+R17559 ring ring_to_subring
+R17559 ring ring_to_subring
+R17608 ring Sub_field.subfield
+R17636 eqtype sub_eqType
+R17717 ring "x '^-1'" ring_scope
+R17717 ring "x '^-1'" ring_scope
+R17740 ring Sub_field.invP
+R17753 eqtype valP
+R17740 ring Sub_field.invP
+R17753 eqtype valP
+R17838 ring subring_to_domain
+R17859 ring Sub_field.sinv
+R17838 ring subring_to_domain
+R17859 ring Sub_field.sinv
+R17905 eqtype val_inj
+R17929 ring invL
+R17990 Coq.Init.Logic "x = y" type_scope
+R17977 eqtype EqSig
+R17985 ring "0" ring_scope
+R17994 ring szero
+R18028 eqtype val_inj
+R17905 eqtype val_inj
+R17929 ring invL
+R17990 Coq.Init.Logic "x = y" type_scope
+R17977 eqtype EqSig
+R17985 ring "0" ring_scope
+R17994 ring szero
+R18028 eqtype val_inj
+R18067 ring nzP
+R18067 ring nzP
+R18095 ring Sub_field.sinv
+R18108 eqtype val_inj
+R18130 ring inv0
+R18095 ring Sub_field.sinv
+R18108 eqtype val_inj
+R18130 ring inv0
+R18287 ring subring
+R18345 eqtype set
+R18362 eqtype sub_set
+R18395 ring "0" ring_scope
+R18459 ring "x1 + x2" ring_scope
+R18519 ring "x1 * x2" ring_scope
+R18579 ring "x1 * x2" ring_scope
+R18633 ring "- x" ring_scope
+R18613 ring Ideal.ideal
+R18674 ring mul_opp1r
+R18684 ring Ideal.idPR
+R18692 ring subr_m1
+R18674 ring mul_opp1r
+R18684 ring Ideal.idPR
+R18692 ring subr_m1
+R18734 ring Ideal.ideal
+R18777 ring zeroP
+R18777 ring zeroP
+R18793 ring addP
+R18793 ring addP
+R18808 ring mulP
+R18808 ring mulP
+R18823 ring mulP
+R18823 ring mulP
+R18956 ring subring
+R19032 Coq.Init.Logic "x = y" type_scope
+R19020 Coq.Init.Logic "x = y" type_scope
+R18995 ring ideal
+R18995 ring ideal
+R19116 classical_lib weak_ext
+R19116 classical_lib weak_ext
+R19155 ring Ideal
+R19155 ring Ideal
+R19172 Coq.Logic.ProofIrrelevance proof_irrelevance
+R19155 ring Ideal
+R19172 Coq.Logic.ProofIrrelevance proof_irrelevance
+R19172 Coq.Logic.ProofIrrelevance proof_irrelevance
+R19172 Coq.Logic.ProofIrrelevance proof_irrelevance
+R19172 Coq.Logic.ProofIrrelevance proof_irrelevance
+R19172 Coq.Logic.ProofIrrelevance proof_irrelevance
+R19277 Coq.Init.Logic "x = y" type_scope
+R19260 Coq.Init.Logic "x = y" type_scope
+R19251 ring idbase
+R19262 ring idbase
+R19241 ring ideal
+R19241 ring ideal
+R19322 ring Ideal0.ideq
+R19322 ring Ideal0.ideq
+R19384 ring ideal
+R19423 eqtype "x '==' y ':>' d" eq_scope
+R19426 ring "0" ring_scope
+R19423 eqtype "x '==' y ':>' d" eq_scope
+R19426 ring "0" ring_scope
+R19466 eqtype eqP
+R19486 ring zeroP
+R19466 eqtype eqP
+R19486 ring zeroP
+R19512 eqtype eq_refl
+R19512 eqtype eq_refl
+R19557 eqtype eqP
+R19576 ring addr0
+R19557 eqtype eqP
+R19557 eqtype eqP
+R19576 ring addr0
+R19615 eqtype eqP
+R19634 ring mul0r
+R19615 eqtype eqP
+R19634 ring mul0r
+R19672 eqtype eqP
+R19695 ring mulr0
+R19672 eqtype eqP
+R19695 ring mulr0
+R19776 Coq.Init.Logic "A /\ B" type_scope
+R19771 Coq.Init.Logic "x <> y" type_scope
+R19824 Coq.Init.Logic "A \/ B" type_scope
+R19820 Coq.Init.Logic "x = y" type_scope
+R19829 Coq.Init.Logic "x = y" type_scope
+R19803 eqtype sub_set
+R19794 ring ideal
+R19754 ring ideal
+R19868 ring ideal
+R19910 Coq.Init.Logic "x = y" type_scope
+R20002 Coq.Init.Logic "x <> y" type_scope
+R19992 Coq.Init.Logic "x <> y" type_scope
+R19975 eqtype sub_set
+R19959 ring ideal
+R20086 ring Ideal0.not_maximal_ideal
+R20063 Coq.Init.Logic "~ x" type_scope
+R20066 ring Ideal0.maximal_ideal
+R20140 Coq.Logic.Classical_Prop not_and_or
+R20140 Coq.Logic.Classical_Prop not_and_or
+R20177 Coq.Logic.Classical_Prop NNPP
+R20177 Coq.Logic.Classical_Prop NNPP
+R20189 Coq.Logic.Classical_Pred_Type not_all_ex_not
+R20189 Coq.Logic.Classical_Pred_Type not_all_ex_not
+R20238 Coq.Logic.Classical_Prop imply_to_and
+R20238 Coq.Logic.Classical_Prop imply_to_and
+R20276 Coq.Logic.Classical_Prop not_or_and
+R20276 Coq.Logic.Classical_Prop not_or_and
+R20315 ring Ideal0.Not_maximal1
+R20315 ring Ideal0.Not_maximal1
+R20381 ring zero_ideal
+R20543 ring subring
+R20568 ring id0
+R20572 ring id_add
+R20579 ring idPL
+R20584 ring idPR
+R20589 ring mulP
+R20594 ring oneP
+R20599 ring zeroP
+R20605 ring addP
+R20647 ring ideal
+R20673 eqtype insub
+R20707 ring "0" ideal_scope
+R20673 eqtype insub
+R20707 ring "0" ideal_scope
+R20727 classical_lib Pb
+R20731 Coq.Init.Logic "'exists' x , p" type_scope
+R20747 Coq.Init.Logic "A /\ B" type_scope
+R20752 Coq.Init.Logic "x = y" type_scope
+R20757 ring "x1 * x2" ring_scope
+R20727 classical_lib Pb
+R20731 Coq.Init.Logic "'exists' x , p" type_scope
+R20747 Coq.Init.Logic "A /\ B" type_scope
+R20752 Coq.Init.Logic "x = y" type_scope
+R20757 ring "x1 * x2" ring_scope
+R20799 classical_lib PbP
+R20799 classical_lib PbP
+R20848 classical_lib PbP
+R20861 ring "0" ring_scope
+R20877 ring mul0r
+R20848 classical_lib PbP
+R20861 ring "0" ring_scope
+R20877 ring mul0r
+R20918 classical_lib PbP
+R20945 classical_lib PbP
+R20978 ring distPM
+R20992 classical_lib PbP
+R21008 ring "x1 + x2" ring_scope
+R20918 classical_lib PbP
+R20945 classical_lib PbP
+R20978 ring distPM
+R20992 classical_lib PbP
+R21008 ring "x1 + x2" ring_scope
+R21050 classical_lib PbP
+R21081 classical_lib PbP
+R21097 ring "x1 * x2" ring_scope
+R21114 ring mulA
+R21122 ring "x1 * x2" ring_scope
+R21126 ring mulC
+R21131 ring mulA
+R21050 classical_lib PbP
+R21081 classical_lib PbP
+R21097 ring "x1 * x2" ring_scope
+R21114 ring mulA
+R21122 ring "x1 * x2" ring_scope
+R21126 ring mulC
+R21131 ring mulA
+R21173 classical_lib PbP
+R21201 classical_lib PbP
+R21216 ring "x1 * x2" ring_scope
+R21231 ring mulA
+R21173 classical_lib PbP
+R21201 classical_lib PbP
+R21216 ring "x1 * x2" ring_scope
+R21231 ring mulA
+R21289 Coq.Init.Logic "'exists' x , p" type_scope
+R21305 Coq.Init.Logic "A /\ B" type_scope
+R21315 Coq.Init.Logic "x = y" type_scope
+R21310 ring "x1 * x2" ring_scope
+R21317 ring "1" ring_scope
+R21386 Coq.Init.Logic "x = y" type_scope
+R21370 ring Ideal1.ideal_of_elem
+R21358 ring Ideal1.srunit
+R21443 ring ideq
+R21443 ring ideq
+R21466 ring Ideal1.ideal_of_elem
+R21466 ring Ideal1.ideal_of_elem
+R21490 eqtype insubP
+R21490 eqtype insubP
+R21544 ssrbool idP
+R21548 ssrbool idP
+R21544 ssrbool idP
+R21548 ssrbool idP
+R21563 classical_lib PbP
+R21563 classical_lib PbP
+R21605 classical_lib PbP
+R21605 classical_lib PbP
+R21621 ring "x1 * x2" ring_scope
+R21621 ring "x1 * x2" ring_scope
+R21649 ring mulA
+R21654 ring mulrCA
+R21649 ring mulA
+R21654 ring mulrCA
+R21670 ring mulC
+R21670 ring mulC
+R21698 ring mulr1
+R21698 ring mulr1
+R21781 ring Ideal1.srunit
+R21774 Coq.Init.Logic "x = y" type_scope
+R21758 ring Ideal1.ideal_of_elem
+R21829 funs congr1
+R21846 ring idbase
+R21856 ring "1" ring_scope
+R21829 funs congr1
+R21846 ring idbase
+R21856 ring "1" ring_scope
+R21873 ring Ideal1.ideal_of_elem
+R21888 ring ring_to_ideal
+R21873 ring Ideal1.ideal_of_elem
+R21888 ring ring_to_ideal
+R21912 eqtype insubP
+R21912 eqtype insubP
+R21947 classical_lib PbP
+R21947 classical_lib PbP
+R21962 ring oneP
+R21962 ring oneP
+R22014 ring mulC
+R22014 ring mulC
+R22035 ssrbool negP
+R22035 ssrbool negP
+R-1 ring ideal_of_elem
+R-1 ring ideal_of_elem
+R-1 ring ideal_of_elem
+R22177 ring subring
+R22202 ring subring
+R22348 Coq.Init.Logic "x = y" type_scope
+R22343 ring "x1 + x2" ring_scope
+R22354 ring "x1 + x2" ring_scope
+R22412 Coq.Init.Logic "x = y" type_scope
+R22407 ring "x1 * x2" ring_scope
+R22418 ring "x1 * x2" ring_scope
+R22464 Coq.Init.Logic "x = y" type_scope
+R22466 ring "0" ring_scope
+R22448 Coq.Init.Logic "~ x" type_scope
+R22528 ring Homo.homo
+R22590 Coq.Init.Logic "x = y" type_scope
+R22579 Coq.Init.Logic "x = y" type_scope
+R22606 constructive_lib surj
+R22648 Coq.Init.Logic "'exists' x , p" type_scope
+R22658 ring Homo.iso
+R22704 ring homo
+R22745 ring iso
+R-1 ring auto
+R-1 ring auto
+R-1 ring auto
+R22836 ring subring
+R22861 ring subring
+R22928 Coq.Init.Logic "x = y" type_scope
+R22926 ring "0" ring_scope
+R22930 ring "0" ring_scope
+R22908 ring homo
+R22972 ring addr_injl
+R22987 ring "0" ring_scope
+R22972 ring addr_injl
+R22987 ring "0" ring_scope
+R23000 ring addr0
+R23008 ring homoAddP
+R23033 ring zeroP
+R23000 ring addr0
+R23008 ring homoAddP
+R23033 ring zeroP
+R23033 ring zeroP
+R23033 ring zeroP
+R23051 ring addr0
+R23051 ring addr0
+R23134 Coq.Init.Logic "x = y" type_scope
+R23129 ring "- x" ring_scope
+R23136 ring "- x" ring_scope
+R23092 ring homo
+R23188 ring addr_injl
+R23188 ring addr_injl
+R23216 ring oppR
+R23223 ring homoAddP
+R23216 ring oppR
+R23223 ring homoAddP
+R23253 ring oppR
+R23258 ring Homo0.homo0
+R23253 ring oppR
+R23258 ring Homo0.homo0
+R23272 ring oppP
+R23272 ring oppP
+R23330 Coq.Bool.Bool "x && y" bool_scope
+R23338 eqtype "x '==' y" eq_scope
+R23341 ring "0" ring_scope
+R23385 ring ideal
+R23369 ring homo
+R23425 ring Homo0.kernel
+R23425 ring Homo0.kernel
+R23462 ssrbool andP
+R23462 ssrbool andP
+R23495 ring Homo0.kernel
+R23502 ring Homo0.homo0
+R23511 eqtype eq_refl
+R23519 ssrbool andbT
+R23525 ring zeroP
+R23495 ring Homo0.kernel
+R23502 ring Homo0.homo0
+R23511 eqtype eq_refl
+R23519 ssrbool andbT
+R23525 ring zeroP
+R23596 ssrbool andP
+R23620 eqtype eqP
+R23642 ssrbool andP
+R23666 eqtype eqP
+R23695 ring Homo0.kernel
+R23715 ring addr0
+R23721 ring addP
+R23596 ssrbool andP
+R23620 eqtype eqP
+R23642 ssrbool andP
+R23666 eqtype eqP
+R23695 ring Homo0.kernel
+R23715 ring addr0
+R23721 ring addP
+R23795 ssrbool andP
+R23819 eqtype eqP
+R23861 ring Homo0.kernel
+R23878 ring mulP
+R23887 ring mul0r
+R23795 ssrbool andP
+R23819 eqtype eqP
+R23861 ring Homo0.kernel
+R23878 ring mulP
+R23887 ring mul0r
+R23951 ssrbool andP
+R23951 ssrbool andP
+R23975 eqtype eqP
+R23975 eqtype eqP
+R24001 ring Homo0.kernel
+R24001 ring Homo0.kernel
+R24022 ring mulP
+R24041 ring mulr0
+R24022 ring mulP
+R24041 ring mulr0
+R-1 ring kernel
+R-1 ring kernel
+R-1 ring kernel
+R24178 ring subring
+R24203 ring subring
+R24251 ring iso
+R24482 Coq.Init.Logic "x = y" type_scope
+R24526 Coq.Init.Logic "x = y" type_scope
+R24570 Coq.Init.Logic "x = y" type_scope
+R24572 ring "0" ring_scope
+R24553 Coq.Init.Logic "~ x" type_scope
+R24602 ssreflect "'if' c 'then' v1 'else' v2" boolean_if_scope
+R24615 Coq.Logic.ClassicalEpsilon epsilon
+R24655 Coq.Init.Logic "A /\ B" type_scope
+R24662 Coq.Init.Logic "x = y" type_scope
+R24624 Coq.Init.Logic inhabits
+R24633 ring "0" ring_scope
+R24672 ring "0" ring_scope
+R24693 ring Iso.iso_inv_spec
+R24706 ring Iso.iso_inv
+R24764 ring Iso.iso_inv
+R24764 ring Iso.iso_inv
+R24804 Coq.Logic.ClassicalEpsilon epsilon_spec
+R24847 Coq.Init.Logic "A /\ B" type_scope
+R24854 Coq.Init.Logic "x = y" type_scope
+R24820 Coq.Init.Logic inhabits
+R24829 ring "0" ring_scope
+R24804 Coq.Logic.ClassicalEpsilon epsilon_spec
+R24847 Coq.Init.Logic "A /\ B" type_scope
+R24854 Coq.Init.Logic "x = y" type_scope
+R24820 Coq.Init.Logic inhabits
+R24829 ring "0" ring_scope
+R24872 constructive_lib antsE
+R24872 constructive_lib antsE
+R24893 ring iontoP
+R24893 ring iontoP
+R24983 ring zeroP
+R24983 ring zeroP
+R25014 ring Iso.iso_inv
+R25014 ring Iso.iso_inv
+R25056 ring homoP
+R25056 ring homoP
+R25084 Coq.Logic.ClassicalEpsilon epsilon_spec
+R25127 Coq.Init.Logic "A /\ B" type_scope
+R25134 Coq.Init.Logic "x = y" type_scope
+R25100 Coq.Init.Logic inhabits
+R25109 ring "0" ring_scope
+R25084 Coq.Logic.ClassicalEpsilon epsilon_spec
+R25127 Coq.Init.Logic "A /\ B" type_scope
+R25134 Coq.Init.Logic "x = y" type_scope
+R25100 Coq.Init.Logic inhabits
+R25109 ring "0" ring_scope
+R25152 constructive_lib antsE
+R25152 constructive_lib antsE
+R25215 ring imonoP
+R25215 ring imonoP
+R25266 ring Iso.iso_inv
+R25266 ring Iso.iso_inv
+R25288 Coq.Logic.ClassicalEpsilon epsilon_spec
+R25331 Coq.Init.Logic "A /\ B" type_scope
+R25338 Coq.Init.Logic "x = y" type_scope
+R25304 Coq.Init.Logic inhabits
+R25313 ring "0" ring_scope
+R25288 Coq.Logic.ClassicalEpsilon epsilon_spec
+R25331 Coq.Init.Logic "A /\ B" type_scope
+R25338 Coq.Init.Logic "x = y" type_scope
+R25304 Coq.Init.Logic inhabits
+R25313 ring "0" ring_scope
+R25354 constructive_lib antsE
+R25354 constructive_lib antsE
+R25373 ring iontoP
+R25373 ring iontoP
+R25466 ring Iso.iso_inv
+R25493 eqtype eqP
+R25510 constructive_lib neq_true
+R25525 eqtype eqP
+R25466 ring Iso.iso_inv
+R25493 eqtype eqP
+R25510 constructive_lib neq_true
+R25525 eqtype eqP
+R25566 ring oneP
+R25571 ring addP
+R25576 ring mulP
+R25581 ring oppP
+R25586 ring homoP
+R25592 ring homoAddP
+R25601 ring homoMulP
+R25610 ring Iso.ii_closed
+R25643 ring homo
+R25654 ring Iso.iso_inv
+R25687 ring Iso.iso_invP
+R25687 ring Iso.iso_invP
+R25757 ring imonoP
+R25757 ring imonoP
+R25805 ring homoAddP
+R25805 ring homoAddP
+R25878 ring imonoP
+R25878 ring imonoP
+R25926 ring homoMulP
+R25926 ring homoMulP
+R26006 ring iso
+R26016 ring Iso.iso_inv
+R26049 ring Iso.iso_invP
+R26049 ring Iso.iso_invP
+R26099 ring Iso.iso_inv_homo
+R26099 ring Iso.iso_inv_homo
+R26141 funs congr1
+R26141 funs congr1
+R26222 ring homoP
+R26222 ring homoP
+R26286 Coq.Init.Logic "x = y" type_scope
+R26284 ring "1" ring_scope
+R26288 ring "1" ring_scope
+R26319 ring mul1r
+R26328 ring "1" ring_scope
+R26319 ring mul1r
+R26328 ring "1" ring_scope
+R26347 ring Iso.ii_inv2
+R26366 ring "1" ring_scope
+R26357 ring Iso.iso_invP
+R26347 ring Iso.ii_inv2
+R26366 ring "1" ring_scope
+R26357 ring Iso.iso_invP
+R26385 ring homoMulP
+R26385 ring homoMulP
+R26418 ring mulr1
+R26425 ring Iso.ii_inv2
+R26433 ring Iso.iso_invP
+R26418 ring mulr1
+R26425 ring Iso.ii_inv2
+R26433 ring Iso.iso_invP
+R26461 ring Iso.ii_closed
+R26471 ring Iso.iso_invP
+R26461 ring Iso.ii_closed
+R26471 ring Iso.iso_invP
+R26566 ring subfield
+R26592 ring subfield
+R26641 ring iso
+R26708 Coq.Init.Logic "x = y" type_scope
+R26703 ring "x '^-1'" ring_scope
+R26714 ring "x '^-1'" ring_scope
+R26691 Coq.Init.Logic "x <> y" type_scope
+R26694 ring "0" ring_scope
+R26769 Coq.Init.Logic "x <> y" type_scope
+R26772 ring "0" ring_scope
+R26769 Coq.Init.Logic "x <> y" type_scope
+R26772 ring "0" ring_scope
+R26783 funs congr1
+R26791 ring iso_inv
+R26783 funs congr1
+R26791 ring iso_inv
+R26821 ring ii_inv1
+R26830 ring iso_invP
+R26821 ring ii_inv1
+R26830 ring iso_invP
+R26865 ring homo0
+R26872 ring iso_inv_homo
+R26865 ring homo0
+R26872 ring iso_inv_homo
+R26900 ring mulr_injl
+R26900 ring mulr_injl
+R26934 ring invR
+R26934 ring invR
+R26956 ring homoMulP
+R26956 ring homoMulP
+R26986 ring invR
+R26986 ring invR
+R27007 ring iso1
+R27007 ring iso1
+R27027 ring invP
+R27027 ring invP
+R27111 ring subring
+R27136 ring subring
+R27188 ring homo
+R27223 constructive_lib surj
+R27272 Coq.Init.Logic "x = y" type_scope
+R27279 ring "0" ring_scope
+R27296 ring oppP
+R27301 ring addP
+R27325 ring iso
+R27396 funs congr1
+R27411 ring "- x" ring_scope
+R27396 funs congr1
+R27411 ring "- x" ring_scope
+R27431 ring oppR
+R27438 ring homoOpp
+R27457 ring homoAddP
+R27431 ring oppR
+R27438 ring homoOpp
+R27457 ring homoAddP
+R27495 funs congr1
+R27517 ring "x - y" ring_scope
+R27495 funs congr1
+R27517 ring "x - y" ring_scope
+R27554 ssrbool andP
+R27554 ssrbool andP
+R27573 eqtype "x '==' y" eq_scope
+R27573 eqtype "x '==' y" eq_scope
+R27599 eqtype eqP
+R27599 eqtype eqP
+R27616 funs congr1
+R27616 funs congr1
+R27646 ring addA
+R27651 ring oppL
+R27656 ring addr0
+R27662 ring add0r
+R27646 ring addA
+R27651 ring oppL
+R27656 ring addr0
+R27662 ring add0r
+R27701 Coq.Logic.Classical_Prop not_and_or
+R27701 Coq.Logic.Classical_Prop not_and_or
+R27745 eqtype eq_refl
+R27759 ssrbool negP
+R27745 eqtype eq_refl
+R27759 ssrbool negP
