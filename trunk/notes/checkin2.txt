@@ -1,0 +1,51 @@
+
+Hi Tom,
+
+  I've made fairly good progress again this week.  Here are the highlights.
+
+1) I've got a polynomial ring structure and important theorems about
+   the degree function and evaluation of a polynomial at a point.
+
+2) I decided to start hacking up a signature for the files, as 
+   reading the Coq scripts is getting really confusing.  I really
+   like what I've got so far, a signature for rings up to
+   the definition of isomorphism.  I didn't realize until a few
+   minutes ago that you could have [Section] commands inside
+   signatures, so the arguments are all explicit and a bit long,
+   but otherwise it's much nicer to read.  I think I should be
+   able to make it to the entire signature up to the main theorems
+   we're aiming for by tomorrow or Wednesday.  That will be great.
+
+Things to note:
+
+A) Following Gonthier, I made all rings be able to distinguish
+   their 0 element.  Even for eqTypes where this doesn't immediately
+   yield classical logic, it's still much nicer than an explicit
+   zero test.  The proof of the ring structure on polynomials is
+   short and sweet.  The first time I tried, in the usual way, 
+   was really, really ugly.  Apparently it is a well known
+   situation, that those proofs are a pain.  
+
+   Thus, the ring.v file gives general facts about rings, but
+   our main focus will be on nzring.v.  It seems like a reasonable
+   enough assumption that you can distinguish 0.  If people complain,
+   there is a hack to turn a nzring into a ring, so there's no
+   loss of generality, but the translation is not pretty.
+
+Plan for this week:
+
+1) Finish Galois signature.
+
+2) Euclidean algorithm for polynomials.
+
+3) More detailed dates on the time-line.  (postponed from last week)
+
+Let me know your thoughts.
+
+Best,
+
+Sean
+
+
+
+
