@@ -4,13 +4,13 @@ DOC_DIR = ~/save/versioned/website/software/galois/doc
 
 # where the ssreflect library lives
 SSR_DIR = ../../../trunk
-LIB_DIR = ..
+LIB_DIR = .
 
 #-------------------------------------------------------------------------------
 # Do not edit below this line                                                   
 #-------------------------------------------------------------------------------
 
-FILES = ring_sig ring # withzero # nzring-sig
+FILES = ssr withzero classical_lib constructive_lib nati lib # withzero # nzring-sig
 GLOB_FILE = .glob
 V_FILES = $(addsuffix .v,$(FILES))
 VO_FILES = $(addsuffix .vo,$(FILES))

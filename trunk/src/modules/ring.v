@@ -1,135 +1,112 @@
 
 Require Import ssr.
-Require Import ring_sig.
+Require Import lib.
+Require Import withzero.
 
 Set Implicit Arguments. 
 Unset Strict Implicit. 
 Import Prenex Implicits.
 
-Module Ring : RING.
+Open Scope dnat_scope.
 
-Structure ring : Type := Ring {
-  rbase :> eqType;
-  add    : rbase -> rbase -> rbase;
-  mul    : rbase -> rbase -> rbase;
-  opp    : rbase -> rbase;
-  zero   : rbase;
-  one    : rbase;
-  addC   : forall x1 x2, add x1 x2 = add x2 x1;
-  addA   : forall x1 x2 x3, add x1 (add x2 x3) = add (add x1 x2) x3;
-  addr0  : forall x, add x zero = x;
-  oppL   : forall x, add (opp x) x = zero;
-  mulC   : forall x1 x2, mul x1 x2 = mul x2 x1;
-  mulA   : forall x1 x2 x3, mul x1 (mul x2 x3) = mul (mul x1 x2) x3;
-  mul1r  : forall x, mul one x = x;
-  distPM : forall x1 x2 x3, mul (add x1 x2) x3 = add (mul x1 x3) (mul x2 x3);
-  distMP : forall x1 x2 x3, mul x1 (add x2 x3) = add (mul x1 x2) (mul x1 x3)
-}.
+(* -------------------------------------------------------------------------- *)
+(*  Rings                                                                     *)
+(* -------------------------------------------------------------------------- *)
 
-Variable r : ring.
-Notation "x1 + x2" := (@add r x1 x2).
-Notation "x1 * x2" := (@mul r x1 x2).
-Notation "- x" := (@opp r x). 
-Notation "0" := (@zero r).
-Notation "1" := (@one r).
-Notation "x - y" := (x + opp y).
-Notation addr := (fun x y => x + y).
-Notation addrr := (fun x y => y + x).
-
-Lemma add0r : forall x, 0 + x = x.
-Proof. by move=> x; rewrite addC; exact: addr0. Qed.
-
-Lemma oppR : forall x:r, x + -x = 0.
-Proof. by move=> x; rewrite addC; exact: oppL. Qed.
-
-Lemma addr_injl : forall x:r, injective (addr x).
-Proof. by move=> x y z; move/(congr1 (addr (-x))); rewrite !addA !oppL !add0r. Qed.
-
-Lemma addr_injr : forall x:r, injective (addrr x).
-Proof. by move=> x y z /=; rewrite addC [z + _]addC; exact: addr_injl. Qed.
-
-Lemma addKr : forall x:r, cancel (addr x) (addr (- x)).
-Proof. by move=> x y; rewrite addA oppL add0r. Qed.
-
-Lemma addKrV : forall x:r, cancel (addr (- x)) (addr x).
-Proof. by move=> x y; rewrite addA oppR add0r. Qed.
-
-Lemma addrK : forall x:r, cancel (addrr x) (addrr (- x)).
-Proof. by move=> x y; rewrite -addA oppR addr0. Qed.
-
-Lemma addrKV : forall x:r, cancel (addrr (- x)) (addrr x).
-Proof. by move=> x y; rewrite -addA oppL addr0. Qed.
-
-Lemma opp_opp : forall x:r, -(-x) = x.
-Proof. by move=> x; apply: (@addr_injr (- x)); rewrite oppL oppR. Qed.
-
-Lemma opp_uniq : forall x y y':r, x + y = 0 -> x + y' = 0 -> y = y'.
-Proof. by move=> x y y' H H'; apply (@addr_injl x); rewrite H H'. Qed.
-
-Lemma opp_def : forall x y:r, x + y = 0 -> y = - x.
-Proof. move=> x y H; apply (@opp_uniq x);auto; by rewrite oppR. Qed.
-
-Lemma mul0r : forall x:r, 0 * x = 0.
-Proof. by move=> x; apply (@addr_injr (0 * x)); rewrite -distPM !add0r. Qed.
-
-Lemma mulr0 : forall x:r, x * 0 = 0.
-Proof. by move=> x; apply (@addr_injr (x * 0)); rewrite -distMP !add0r. Qed.
-
-Lemma mul_oppL : forall x y:r, - x * y = - (x * y).
-Proof. by move=> x y; apply (@opp_uniq (x * y));rewrite -?distPM oppR ?mul0r. Qed. 
+Module Ring.
   
-Lemma mul_oppR : forall x y:r, x * - y = - (x * y).
-Proof. by move=> x y; apply (@opp_uniq (x * y)); rewrite -?distMP oppR ?mulr0. Qed.
+  Section Axioms.
 
-Lemma mul_opp_opp : forall x y:r, - x * - y = x * y.
-Proof. by move=> x y; rewrite mul_oppR mul_oppL opp_opp. Qed.
+    Variable d' : eqType.
+    Notation d := (withzeroData d').
+    Notation "0" := (@Zero _).
 
-Lemma opp_sym : forall x y:r, - x = y -> x = - y.
-Proof. by move=> x y H; rewrite -H; symmetry; exact: opp_opp. Qed.
+    Definition lift_opp (f:d'->d') x :=
+      match x with
+        | Zero => 0
+        | Nz x => Nz (f x)
+      end.
 
-Lemma addrCA : forall m n p:r, m + (n + p) = n + (m + p).
-Proof. by move=> m n p; rewrite addA [m + _]addC addA. Qed.
+    Definition lift_add (add:d'->d'->d) x y := 
+      match x, y with 
+        | Zero, _ => y
+        | _, Zero => x
+        | Nz x, Nz y => add x y
+      end.
 
-Lemma opp0 : - 0 = 0 :> r.
-Proof. by apply (@addr_injr 0); rewrite oppL !addr0. Qed.
+    Definition lift_mul (mul:d'->d'->d) x y := 
+      match x, y with 
+        | Nz x, Nz y => mul x y
+        | _, _ => 0
+      end.
 
-Lemma oppr0 : forall x:r, (-x == 0) = (x == 0).
-Proof. 
- (* {{{ *)
-move=> x. 
-apply/eqP.
-case H : (_ == _) => [|H']; first by rewrite (eqP H) opp0.
-move: (congr1 (@opp _) H).
-rewrite opp_opp opp0 => H0.
-by rewrite H0 eq_refl in H'.
- (* }}} *)
-Qed.
+    Variable addr' : d'->d'->d.
+    Variable mulr' : d'->d'->d.
+    Variable oppr' : d'->d'.
+    Variable oner' : d'.
 
-Lemma mulr1 : forall x:r, x * 1 = x.
-Proof. by move=> x; rewrite mulC; exact: mul1r. Qed.
+    Notation "x1 + x2" := (lift_add addr' x1 x2).
+    Notation "x1 * x2" := (lift_mul mulr' x1 x2).
+    Notation "- x" := (lift_opp oppr' x).
+    Notation "1" := (Nz oner').
 
-Lemma mul_opp1r : forall x:r, -(1) * x = - x.
-Proof. by move=> x; apply (@addr_injl x); rewrite oppR mul_oppL mul1r oppR. Qed.
+    Structure ring_axioms : Type := Ring_axioms {
+      oppL'    : forall x,  - x + x = 0;
+      addA'    : forall x1 x2 x3, x1 + (x2 + x3) = (x1 + x2) + x3;   
+        addC'    : forall x1 x2, x1 + x2 = x2 + x1;
+      mul1r'   : forall x, 1 * x = x;
+      mulr1'   : forall x, x * 1 = x;
+      mulA'    : forall x1 x2 x3, x1 * (x2 * x3) = x1 * x2 * x3;
+      distPM'  : forall x1 x2 x3, (x1 + x2) * x3 = x1 * x3 + x2 * x3;
+      distMP'  : forall x1 x2 x3, x1 * (x2 + x3) = x1 * x2 + x1 * x3;
+      mulC'    : forall x1 x2, x1 * x2 = x2 * x1
+    }.
 
-Lemma mul_opp1_opp : forall x:r, -(1) * - x = x.
-Proof. by move=> x; rewrite mul_opp1r opp_opp. Qed.
+  End Axioms.
 
-Lemma mul_opp1_opp1 : -(1) * -(1) = 1 :> r.
-Proof.  exact: mul_opp1_opp. Qed.
+  Structure prering : Type := Ring {
+    rbase'    : eqType;
+    addr'     : rbase' -> rbase' -> withzero rbase';
+    oppr'     : rbase' -> rbase';
+    oner'     : rbase';
+    mulr'     : rbase' -> rbase' -> withzero rbase';
+    axioms    : ring_axioms addr' mulr' oppr' oner'
+  }.
 
-Lemma opp_add : forall x y:r, -(x + y) = - x - y.
-Proof. by move=> x y; rewrite -mul_opp1r distMP !mul_opp1r. Qed.
+  Definition rbase r := withzeroData (rbase' r).
+  Coercion rbase : prering >-> eqType.
 
-Lemma zero_ring : 1 = 0 :> r -> forall x:r, x = 0.
-Proof. by move=> H x; rewrite -[x]mul1r H mul0r. Qed.
+  Variable r:prering.
 
-Lemma subr0 : forall x:r, x - 0 = x.
-Proof. by rewrite opp0; exact: addr0. Qed.
+  Definition addr (x y:r) := lift_add (@addr' r) x y.
+  Definition mulr (x y:r) := lift_mul (@mulr' r) x y.
+  Definition oppr (x:r)   := lift_opp (@oppr' r) x.
+  Definition oner         := Nz (oner' r).
 
-Lemma sub0r : forall x:r, 0 - x = - x.
-Proof. by move=> x; rewrite add0r. Qed.
+  Notation "x1 + x2" := (addr x1 x2).
+  Notation "x1 * x2" := (mulr x1 x2).
+  Notation "- x"     := (oppr x).
+  Notation "x - y"   := (x + (- y)).
+  Notation "1"       := (oner).
+  Notation "0"       := (@Zero _).
 
-Lemma mulrCA : forall m n p:r, m * (n * p) = n * (m * p).
-Proof. by move=> m n p; rewrite mulA [m * _]mulC mulA. Qed.
+  Axiom addC   : forall x y:r, x + y = y + x.
+  Axiom addA   : forall x y z:r, x + (y + z) = (x + y) + z. 
+  Axiom addr0  : forall x:r, x + 0 = x.
+  Axiom oppL   : forall x:r, -x + x = 0.
+  Axiom mulA   : forall x y z:r, x * (y * z) = (x * y) * z. 
+  Axiom distPM : forall x1 x2 x3:r, (x1 + x2) * x3 = (x1 * x3) + (x2 * x3).
+  Axiom distMP : forall x1 x2 x3:r, x1 * (x2 + x3) = (x1 * x2) + (x1 * x3).
+  Axiom mul1r  : forall x:r, 1 * x = x. 
+  Axiom mulC   : forall x y:r, x * y = y * x.
 
 End Ring.
+
+Notation "x1 + x2" := (Ring.addr x1 x2)         : ring_scope.
+Notation "x1 * x2" := (Ring.mulr x1 x2)         : ring_scope.
+Notation "- x"     := (Ring.oppr x)             : ring_scope.
+Notation "0"       := (@Zero _)            : ring_scope.
+Notation "1"       := (Ring.oner _)             : ring_scope.
+Notation "x - y"   := (x + Ring.oppr y)         : ring_scope.
+Notation addrr   := (fun x y => y + x).
+Notation mulrr   := (fun x y => y * x).
