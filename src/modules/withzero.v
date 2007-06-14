@@ -1,5 +1,4 @@
 Require Import ssr.
-Require Import lib.
 
 Set Implicit Arguments. 
 Unset Strict Implicit. 
