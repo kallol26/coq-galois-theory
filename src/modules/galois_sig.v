@@ -754,29 +754,43 @@ Module Type GALOIS.
   Section GaloisGroup.
 
     Variable U:fieldz.
-    Variable K F:subfield U.
+    Variable E F:subfield U.
 
-    Variable ext:algebraic_ext K F.
+    (** An algebraic extension ensures that the Galois group is finite. *)
+    Hypothesis ext:algebraic_ext E F.
     
-    (** An automorphism of K is called Galois if it fixes F. *)
-    Definition gal_auto (a:auto K) :=  Pb(forall x, F x -> a x = x).
+    Parameter comp_auto : auto E -> auto E -> auto E.
+    Parameter inv_auto : auto E -> auto E.
+
+    Structure subgroup : Type := Subgroup {
+      sgbase :> seq (auto E);
+      sg1    :  forall a b, sgbase a -> sgbase b -> sgbase (comp_auto a b);
+      sg2    :  forall a, sgbase a -> sgbase (inv_auto a)
+    }.
+
+    (** An automorphism of E is called Galois if it fixes F. *)
+    Definition gal_auto (a:auto E) :=  Pb(forall x, F x -> a x = x).
 
     (** The fixed elements of an automorphism. This set turns out 
         to be a field. *)
-    Definition fixed_field1 (a:auto K) : set U := fun x => a x == x.
+    Parameter fixed_field1 : auto E -> subfield U.
+
+    (* Definition fixed_field1 (a:auto E) : set U := fun x => a x == x. *)
 
     (** The fixed elements of a finite sequence of automorphisms, also a field. *)
-    Definition fixed_field (s:seq (auto K)) : set U := fun x => K x && all (fun a:auto K => a x == x) s.
+    Parameter fixed_field : seq (auto E) -> subfield U. 
 
-    (** If K is a finite extension of F, then there are a finite
+    (* Definition fixed_field (s:seq (auto E)) : set U := fun x => E x && all (fun a:auto E => a x == x) s. *)
+
+    (** If E is a finite extension of F, then there are a finite
         number of Galois automorphisms.  *)
-    Definition galois_groupP (g:seq (auto K)) := forall a, gal_auto a -> g a /\ count (set1 a) g = 1%N.
+    Definition galois_groupP (g:subgroup) := forall a, gal_auto a -> g a /\ count (set1 a) g = 1%N.
 
-    (** An extension is called Galois if the fixed field of K is equal to F. *)
+    (** An extension is called Galois if the fixed field of E is equal to F. *)
     Definition galois_ext := forall g, galois_groupP g -> fixed_field g = F.
 
     Structure galois_group_ty : Type := Galois_group_ty {
-      gg_seq :> seq (auto K);
+      gg_seq :> subgroup;
       ggP : galois_groupP gg_seq
     }.
     
@@ -795,36 +809,68 @@ Module Type GALOIS.
     
     Variable U : fieldz.
     Variable E B C F : subfield U.
-    Variable H K : seq (auto E).
+    Variable H K : subgroup E.
 
-    Parameter extEF : galois_ext E F.
-    Parameter extEB : extension E B.
-    Parameter extBF : extension B F.
-    Parameter magic_subfield : set U -> subfield U.
-    
-    Parameter subgroup : seq (auto E) -> bool.
-    Parameter normal_subgroup : seq (auto E) -> bool.
-    Parameter intersect_group : seq (auto E) -> seq (auto E) -> seq (auto E).
-    Parameter union_group : seq (auto E) -> seq (auto E) -> seq (auto E).
-    Parameter group_index : seq (auto E) -> seq (auto E) -> nati.
-    Parameter intersect_field : set U -> set U -> subfield U.
-    Parameter union_field : set U -> set U -> subfield U.
-    
-    Definition gamma : seq (auto E) -> set U := fun g => fixed_field E g.
-    Definition phi   : subfield U -> seq (auto E) := fun H => galois_group E H.
+    Hypothesis extEF : galois_ext E F.
+    Hypothesis extEB : extension E B.
+    Hypothesis extBF : extension B F.
+    Hypothesis extEC : extension E C.
+    Hypothesis extCF : extension C F.
 
-    Axiom galois1a : bijective gamma.
-    Axiom galois1b : comp gamma phi = id.
-    Axiom galois2a : fixed_field E (galois_group E B) = B.
-    Axiom galois2b : gg_seq(galois_group E (magic_subfield(fixed_field E H))) = H.
-    Axiom galois3a : fixed_field E (union_group H K) = intersect_field (fixed_field E H) (fixed_field E K).
-    Axiom galois3b : fixed_field E (intersect_group H K) = union_field (fixed_field E H) (fixed_field E K).
-    Axiom galois3c : gg_seq(galois_group E (union_field B C)) = intersect_group (galois_group E B) (galois_group E C).
-    Axiom galois3d : gg_seq(galois_group E (intersect_field B C)) = union_group (galois_group E B) (galois_group E C).
-    Axiom galois4  : index B F = group_index (galois_group E F) (galois_group E B).
-    Axiom galois5  : galois_ext B F <-> normal_subgroup (galois_group E B).
+    Parameter normal_subgroup : subgroup E -> bool.
+    Parameter intersect_group : subgroup E -> subgroup E -> subgroup E.
+    Parameter union_group     : subgroup E -> subgroup E -> subgroup E.
+    Parameter group_index     : subgroup E -> subgroup E -> nat.
+    Parameter intersect_field : subfield U -> subfield U -> subfield U.
+    Parameter union_field     : subfield U -> subfield U -> subfield U.
+
+    Axiom galois1a : fixed_field E (galois_group E B) = B.
+    Axiom galois1b : gg_seq(galois_group E (fixed_field E H)) = H.
+    Axiom galois2a : fixed_field E (union_group H K) = intersect_field (fixed_field E H) (fixed_field E K).
+    Axiom galois2b : fixed_field E (intersect_group H K) = union_field (fixed_field E H) (fixed_field E K).
+    Axiom galois2c : gg_seq(galois_group E (union_field B C)) = intersect_group (galois_group E B) (galois_group E C).
+    Axiom galois2d : gg_seq(galois_group E (intersect_field B C)) = union_group (galois_group E B) (galois_group E C).
+    Axiom galois3  : index B F = Nat (group_index (galois_group E F) (galois_group E B)).
+    Axiom galois4  : galois_ext B F <-> normal_subgroup (galois_group E B).
     
   End FundamentalTheorem.
+
+  (* -------------------------------------------------------------------------- *)
+  (*  Solvable by Radicals                                                      *)
+  (* -------------------------------------------------------------------------- *)
+
+  Section Solvable.
+    
+    Variable U : fieldz.
+    Variable E F : subfield U.
+
+    (** Solvable by radicals. *)
+    Parameter rad_solvable : poly U -> bool.
+    (** Solvable groups. *)
+    Parameter solvable : subgroup E -> bool.
+      
+    Axiom solvable_rad : forall p:poly U, 
+      all F (coefs p) -> rad_solvable p -> solvable (galois_group E F).
+
+    Parameter alternating_group : nat -> subgroup E.
+    
+    Axiom A5_unsolvable : ~(solvable (alternating_group 5)).
+
+  End Solvable.
+
+  (* -------------------------------------------------------------------------- *)
+  (*  Abel's Theorem                                                            *)
+  (* -------------------------------------------------------------------------- *)
+  
+  Section Abel.
+
+    (** rationsl *)
+    Parameter rat : fieldz.
+
+    (** Quintic polynomials are not solvable by radicals. *)
+    Axiom Abel_Ruffini : exists p:poly rat, quintic p /\ ~(rad_solvable p).
+
+  End Abel.
 
 End GALOIS.
   
