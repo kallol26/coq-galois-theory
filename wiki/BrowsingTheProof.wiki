@@ -41,5 +41,4 @@ But, if you've already got a copy, then ...
 Download the sources from http://proofgeneral.inf.ed.ac.uk/develdownload.html
 
   # In .xemacs/init.el add the line (load-file ".../ProofGeneral/generic/proof-site.el")
-
-
+  # et cetera ....
