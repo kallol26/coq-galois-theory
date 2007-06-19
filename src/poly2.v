@@ -24,9 +24,9 @@ Variable R : nzidom.
 
 Notation poly := (poly_ring R).
 
-Definition const c : poly := if c is Nz c' then Nz (Lc c') else 0.
+Definition const c : poly_ring R := if c is Nz c' then Nz (Lc c') else 0.
 
-Definition X : poly := Nz(0::(Lc (one_nz _))).
+Definition X : poly_ring R := Nz(0::(Lc (one_nz _))).
 
 (* ---------------------  Lemma instances at Ring type  --------------------- *)
 
@@ -236,6 +236,7 @@ Lemma deg_add_nz_aux : forall n (p q : poly),
   deg p = n -> deg p = deg q -> deg (p + q) <= deg p.
 Proof.
  (* {{{ *)
+
 move=> [|n] p q Hp Hq.
   move: (degInf Hp) => -> /= .
   by rewrite add0r -Hq Hp lei_refl.
@@ -259,6 +260,7 @@ case H : (_ + _) => [|x].
 rewrite -H leiS.
 apply: IH => // .
 by rewrite Hc2 Hd2.
+
  (* }}} *)
 Qed.
 
